@@ -1,67 +1,158 @@
 [
     {
         "_id": "shf001",
-        "name": "Miles G. Morales (Spider-Man: Across the Spider-Verse)",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012345.jpg",
-        "price": 10000,
+        "name": "Goku Super Saiyan Full Power",
+        "imgUrl": "/src/assets/img/goku-super.jpg",
+        "price": 6500,
         "labels": [
-            "Marvel",
-            "Spider-Man",
-            "Action Figure"
+            "Dragon Ball Z",
+            "Goku",
+            "Anime"
         ],
-        "createdAt": 1690848000000,
+        "createdAt": 1713648000000,
         "inStock": true
     },
     {
         "_id": "shf002",
-        "name": "PICCOLO -DAIMA-",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012346.jpg",
-        "price": 8000,
+        "name": "Vegeta Saiyan Armor Ver.",
+        "imgUrl": "/src/assets/img/Vegeta-Saiyan.jpg",
+        "price": 100,
         "labels": [
-            "Dragon Ball",
-            "Piccolo",
+            "Dragon Ball Z",
+            "Vegeta",
             "Anime"
         ],
-        "createdAt": 1690848000000,
+        "createdAt": 1713561600000,
         "inStock": true
     },
     {
         "_id": "shf003",
-        "name": "KAMEN RIDER BUFFA FEVER ZOMBIE FORM JYAMASHIN",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012347.jpg",
-        "price": 10000,
+        "name": "Frieza Final Form",
+        "imgUrl": "/src/assets/img/Frieza Final Form.jpg",
+        "price": 6800,
         "labels": [
-            "Kamen Rider",
-            "Buffa",
-            "Tokusatsu"
+            "Dragon Ball Z",
+            "Frieza",
+            "Anime"
         ],
-        "createdAt": 1688169600000,
+        "createdAt": 1713475200000,
         "inStock": true
     },
     {
         "_id": "shf004",
-        "name": "COOLER FINAL FORM -40th Anniversary Reissue Edition-",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012348.jpg",
-        "price": 9000,
+        "name": "Piccolo The Proud Namekian",
+        "imgUrl": "/src/assets/img/Piccolo The Proud Namekian.jpg",
+        "price": 6000,
         "labels": [
-            "Dragon Ball",
-            "Cooler",
+            "Dragon Ball Z",
+            "Piccolo",
             "Anime"
         ],
-        "createdAt": 1698796800000,
+        "createdAt": 1713388800000,
         "inStock": true
     },
     {
         "_id": "shf005",
-        "name": "GUIL ARC THE DARK WARRIOR",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012349.jpg",
+        "name": "Trunks Sword Edition",
+        "imgUrl": "/src/assets/img/Trunks Sword Edition.jpg",
+        "price": 7200,
+        "labels": [
+            "Dragon Ball Z",
+            "Trunks",
+            "Anime"
+        ],
+        "createdAt": 1713302400000,
+        "inStock": false
+    },
+    {
+        "_id": "shf006",
+        "name": "Android 18",
+        "imgUrl": "/src/assets/img/Android 18.jpg",
+        "price": 5900,
+        "labels": [
+            "Dragon Ball Z",
+            "Android 18",
+            "Anime"
+        ],
+        "createdAt": 1713216000000,
+        "inStock": true
+    },
+    {
+        "_id": "shf007",
+        "name": "Majin Buu (Evil)",
+        "imgUrl": "/src/assets/img/Majin Buu (Evil).jpg",
         "price": 8000,
         "labels": [
-            "Original",
-            "Fantasy",
-            "Action Figure"
+            "Dragon Ball Z",
+            "Majin Buu",
+            "Anime"
         ],
-        "createdAt": 1690848000000,
+        "createdAt": 1713129600000,
+        "inStock": true
+    },
+    {
+        "_id": "shf008",
+        "name": "Cell Perfect Form",
+        "imgUrl": "/src/assets/img/Cell Perfect Form.jpg",
+        "price": 7900,
+        "labels": [
+            "Dragon Ball Z",
+            "Cell",
+            "Anime"
+        ],
+        "createdAt": 1713043200000,
+        "inStock": true
+    },
+    {
+        "_id": "shf009",
+        "name": "Gohan Beast Mode",
+        "imgUrl": "/src/assets/img/Gohan Beast Mode.jpg",
+        "price": 7000,
+        "labels": [
+            "Dragon Ball Z",
+            "Gohan",
+            "Anime"
+        ],
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "shf010",
+        "name": "Broly Legendary Super Saiyan",
+        "imgUrl": "/src/assets/img/Broly Legendary Super Saiyan.jpg",
+        "price": 8500,
+        "labels": [
+            "Dragon Ball Z",
+            "Broly",
+            "Anime"
+        ],
+        "createdAt": 1712870400000,
+        "inStock": false
+    },
+    {
+        "_id": "shf011",
+        "name": "Tien Shinhan & Chiaotzu",
+        "imgUrl": "/src/assets/img/Tien Shinhan & Chiaotzu.jpg",
+        "price": 6600,
+        "labels": [
+            "Dragon Ball Z",
+            "Tien",
+            "Anime"
+        ],
+        "createdAt": 1712784000000,
+        "inStock": true
+    },
+    {
+        "_id": "shf012",
+        "name": "Cooler Final Form -40th Anniversary-",
+        "imgUrl": "/src/assets/img/Cooler Final Form.jpg",
+        "price": 9000,
+        "labels": [
+            "Dragon Ball Z",
+            "Cooler",
+            "Anime"
+        ],
+        "createdAt": 1712697600000,
         "inStock": true
     }
 ]

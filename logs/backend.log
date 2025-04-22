@@ -4,3 +4,10 @@
 21.4.2025, 10:58:03 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'length')
 21.4.2025, 11:03:10 - ERROR - cannot load toys | cannot find toy:undefined
 21.4.2025, 12:39:08 - ERROR - cannot load toy | ReferenceError: fs is not defined
+21.4.2025, 16:54:36 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
+21.4.2025, 16:54:53 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
+21.4.2025, 16:55:20 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
+21.4.2025, 16:55:21 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
+21.4.2025, 16:55:37 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
+21.4.2025, 16:55:38 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
+21.4.2025, 16:55:38 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')

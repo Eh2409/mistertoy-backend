@@ -1,7 +1,9 @@
+import express from 'express'
+import cors from 'cors'
+
 import { loggerService } from './services/logger.service.js'
 import { toyService } from './services/toy.service.js'
 
-import express from 'express'
 
 const app = express()
 
@@ -9,19 +11,33 @@ app.use(express.static('public'))
 app.use(express.json())
 
 
+const corsOptions = {
+    origin: [
+        'http://localhost:5173',
+        'http://127.0.0.1:5173',
+        'http://localhost:5174',
+        'http://127.0.0.1:5174',
+        'http://127.0.0.1:3000',
+        'http://localhost:3000',
+    ],
+    credentials: true,
+}
+app.use(cors(corsOptions))
+
+
+
 // toy api
 
 app.get('/api/toy', (req, res) => {
-
     const filterBy = {
         name: req.query.name || '',
         price: +req.query.price || 0,
-        labels: req.query.labels || [],
+        labels: req.query['labels[]'] || [],
+        inStock: req.query.inStock === 'true' ? true : req.query.inStock === 'false' ? false : undefined,
         pageIdx: +req.query.pageIdx || 0,
         sortType: req.query.sortType || '',
-        sortDir: req.query.sortDir || 0,
+        sortDir: +req.query.sortDir || 0,
     }
-
 
     toyService.query(filterBy)
         .then(data => res.send(data))
