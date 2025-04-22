@@ -1,4 +1,4 @@
-// import path from 'path'
+import path from 'path'
 import express from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
@@ -31,21 +31,15 @@ app.use(cors(corsOptions))
 
 app.get('/api/toy', (req, res) => {
 
-    console.log(req.query);
-
-
     const filterBy = {
         name: req.query.name || '',
         price: +req.query.price || 0,
-        labels: req.query['labels[]'] || [],
+        labels: req.query.labels || [],
         inStock: req.query.inStock === 'true' ? true : req.query.inStock === 'false' ? false : undefined,
         pageIdx: +req.query.pageIdx || 0,
         sortType: req.query.sortType || '',
         sortDir: +req.query.sortDir || 0,
     }
-
-    console.log(filterBy);
-
 
     toyService.query(filterBy)
         .then(data => res.send(data))
@@ -70,6 +64,7 @@ app.post('/api/toy', (req, res) => {
     const { name, price, imgUrl, labels } = req.body
     if (!name || !price) return res.status(400).send('Missing required fields')
 
+
     const toyToSave = {
         name,
         price: +price || 0,
@@ -86,6 +81,7 @@ app.post('/api/toy', (req, res) => {
 })
 
 app.put('/api/toy/:toyId', (req, res) => {
+    console.log('PUT:', req.body);
     const { _id, name, price, imgUrl, labels, inStock } = req.body
     if (!_id || !name || !price) return res.status(400).send('Missing required fields')
 
@@ -118,9 +114,9 @@ app.delete('/api/toy/:toyId', (req, res) => {
 })
 
 
-// app.get('/**', (req, res) => {
-//     res.sendFile(path.resolve('public/index.html'))
-// })
+app.get('/**', (req, res) => {
+    res.sendFile(path.resolve('public/index.html'))
+})
 
 const port = 3030
 app.listen(port, () => console.log(`Server ready at port http://127.0.0.1:${port}`))
