@@ -1,15 +1,16 @@
+// import path from 'path'
 import express from 'express'
 import cors from 'cors'
+import cookieParser from 'cookie-parser'
 
 import { loggerService } from './services/logger.service.js'
 import { toyService } from './services/toy.service.js'
 
-
 const app = express()
 
 app.use(express.static('public'))
+app.use(cookieParser())
 app.use(express.json())
-
 
 const corsOptions = {
     origin: [
@@ -29,6 +30,10 @@ app.use(cors(corsOptions))
 // toy api
 
 app.get('/api/toy', (req, res) => {
+
+    console.log(req.query);
+
+
     const filterBy = {
         name: req.query.name || '',
         price: +req.query.price || 0,
@@ -38,6 +43,9 @@ app.get('/api/toy', (req, res) => {
         sortType: req.query.sortType || '',
         sortDir: +req.query.sortDir || 0,
     }
+
+    console.log(filterBy);
+
 
     toyService.query(filterBy)
         .then(data => res.send(data))
@@ -110,6 +118,9 @@ app.delete('/api/toy/:toyId', (req, res) => {
 })
 
 
+// app.get('/**', (req, res) => {
+//     res.sendFile(path.resolve('public/index.html'))
+// })
 
 const port = 3030
-app.listen(port, () => console.log(`Server ready at port http://127.0.01:${port}`))
+app.listen(port, () => console.log(`Server ready at port http://127.0.0.1:${port}`))

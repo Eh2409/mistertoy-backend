@@ -2,7 +2,7 @@
     {
         "_id": "shf001",
         "name": "Goku Super Saiyan Full Power",
-        "imgUrl": "assets/img/goku super.jpeg",
+        "imgUrl": "/src/assets/img/goku-super.jpg",
         "price": 6500,
         "labels": [
             "Dragon Ball Z",
@@ -15,7 +15,7 @@
     {
         "_id": "shf002",
         "name": "Vegeta Saiyan Armor Ver.",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012346.jpg",
+        "imgUrl": "/src/assets/img/Vegeta-Saiyan.jpg",
         "price": 6200,
         "labels": [
             "Dragon Ball Z",
@@ -28,7 +28,7 @@
     {
         "_id": "shf003",
         "name": "Frieza Final Form",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012347.jpg",
+        "imgUrl": "/src/assets/img/Frieza Final Form.jpg",
         "price": 6800,
         "labels": [
             "Dragon Ball Z",
@@ -41,7 +41,7 @@
     {
         "_id": "shf004",
         "name": "Piccolo The Proud Namekian",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012348.jpg",
+        "imgUrl": "/src/assets/img/Piccolo The Proud Namekian.jpg",
         "price": 6000,
         "labels": [
             "Dragon Ball Z",
@@ -54,7 +54,7 @@
     {
         "_id": "shf005",
         "name": "Trunks Sword Edition",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012349.jpg",
+        "imgUrl": "/src/assets/img/Trunks Sword Edition.jpg",
         "price": 7200,
         "labels": [
             "Dragon Ball Z",
@@ -67,7 +67,7 @@
     {
         "_id": "shf006",
         "name": "Android 18",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012350.jpg",
+        "imgUrl": "/src/assets/img/Android 18.jpg",
         "price": 5900,
         "labels": [
             "Dragon Ball Z",
@@ -80,7 +80,7 @@
     {
         "_id": "shf007",
         "name": "Majin Buu (Evil)",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012351.jpg",
+        "imgUrl": "/src/assets/img/Majin Buu (Evil).jpg",
         "price": 8000,
         "labels": [
             "Dragon Ball Z",
@@ -93,7 +93,7 @@
     {
         "_id": "shf008",
         "name": "Cell Perfect Form",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012352.jpg",
+        "imgUrl": "/src/assets/img/Cell Perfect Form.jpg",
         "price": 7900,
         "labels": [
             "Dragon Ball Z",
@@ -106,7 +106,7 @@
     {
         "_id": "shf009",
         "name": "Gohan Beast Mode",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012353.jpg",
+        "imgUrl": "/src/assets/img/Gohan Beast Mode.jpg",
         "price": 7000,
         "labels": [
             "Dragon Ball Z",
@@ -119,7 +119,7 @@
     {
         "_id": "shf010",
         "name": "Broly Legendary Super Saiyan",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012354.jpg",
+        "imgUrl": "/src/assets/img/Broly Legendary Super Saiyan.jpg",
         "price": 8500,
         "labels": [
             "Dragon Ball Z",
@@ -132,7 +132,7 @@
     {
         "_id": "shf011",
         "name": "Tien Shinhan & Chiaotzu",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012355.jpg",
+        "imgUrl": "/src/assets/img/Tien Shinhan & Chiaotzu.jpg",
         "price": 6600,
         "labels": [
             "Dragon Ball Z",
@@ -145,7 +145,7 @@
     {
         "_id": "shf012",
         "name": "Cooler Final Form -40th Anniversary-",
-        "imgUrl": "https://tamashiiweb.com/images/item/item_0000012356.jpg",
+        "imgUrl": "/src/assets/img/Cooler Final Form.jpg",
         "price": 9000,
         "labels": [
             "Dragon Ball Z",
