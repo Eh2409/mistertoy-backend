@@ -19,3 +19,16 @@
 22.4.2025, 14:25:34 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
 22.4.2025, 14:25:36 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
 22.4.2025, 14:25:40 - ERROR - cannot load toys | TypeError: Cannot read properties of undefined (reading 'name')
+22.4.2025, 20:39:42 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+22.4.2025, 20:41:40 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+22.4.2025, 20:43:54 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+22.4.2025, 20:47:13 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+22.4.2025, 20:47:53 - ERROR - cannot remove toy | cannot find toy:GvZbPv
+22.4.2025, 20:47:59 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+22.4.2025, 20:54:40 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+23.4.2025, 11:21:38 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+23.4.2025, 11:22:29 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+23.4.2025, 11:24:43 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+23.4.2025, 11:27:29 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
+23.4.2025, 11:50:29 - ERROR - cannot remove toy | ReferenceError: send is not defined
+23.4.2025, 11:50:57 - ERROR - cannot remove toy | ReferenceError: send is not defined

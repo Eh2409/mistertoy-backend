@@ -106,7 +106,7 @@ app.delete('/api/toy/:toyId', (req, res) => {
     const { toyId } = req.params
 
     toyService.remove(toyId)
-        .then(toy => res.send(toy))
+        .then(data => res.status(200).send(data))
         .catch(err => {
             loggerService.error('cannot remove toy', err)
             res.status(500).send('cannot remove toy')

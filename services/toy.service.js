@@ -12,7 +12,7 @@ export const toyService = {
 const toys = utilService.readJsonFile('data/toy.json')
 const PAGE_SIZE = 12
 
-function query(filterBy) {
+function query(filterBy = {}) {
 
     return Promise.resolve(toys)
         .then(toys => {
@@ -51,7 +51,8 @@ function query(filterBy) {
             const maxPageCount = Math.ceil(toys.length / PAGE_SIZE)
 
 
-            const startIdx = filterBy.pageIdx * PAGE_SIZE
+            const pageIdx = filterBy.pageIdx ? filterBy.pageIdx : 0
+            const startIdx = pageIdx * PAGE_SIZE
             toys = toys.slice(startIdx, startIdx + PAGE_SIZE)
 
 
@@ -67,8 +68,9 @@ function remove(toyId) {
     const toyIdx = toys.findIndex(toy => toy._id === toyId)
     if (toyIdx === -1) return Promise.reject('cannot find toy:' + toyId)
     toys.splice(toyIdx, 1)
-    return _saveToysToFile()
+    return _saveToysToFile().then(() => ({ maxPageCount: _getMaxPageCount() }))
 }
+
 function save(toyToSave) {
     if (toyToSave._id) {
         const toyIdx = toys.findIndex(toy => toy._id === toyToSave._id)
@@ -83,6 +85,9 @@ function save(toyToSave) {
     return _saveToysToFile().then(() => toyToSave)
 }
 
+function _getMaxPageCount() {
+    return Math.ceil(toys.length / PAGE_SIZE)
+}
 
 function _saveToysToFile() {
     return new Promise((resolve, reject) => {
