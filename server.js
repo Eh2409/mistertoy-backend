@@ -62,7 +62,7 @@ app.get('/api/toy/:toyId', (req, res) => {
 
 app.post('/api/toy', (req, res) => {
     const { name, price, imgUrl, labels } = req.body
-    if (!name || !price) return res.status(400).send('Missing required fields')
+    if (!name || price < 0) return res.status(400).send('Missing required fields')
 
 
     const toyToSave = {
@@ -83,7 +83,7 @@ app.post('/api/toy', (req, res) => {
 app.put('/api/toy/:toyId', (req, res) => {
     console.log('PUT:', req.body);
     const { _id, name, price, imgUrl, labels, inStock } = req.body
-    if (!_id || !name || !price) return res.status(400).send('Missing required fields')
+    if (!_id || !name || price < 0) return res.status(400).send('Missing required fields')
 
     const toyToSave = {
         _id,
