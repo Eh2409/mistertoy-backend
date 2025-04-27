@@ -2,7 +2,7 @@
     {
         "_id": "shf001",
         "name": "Goku Super Saiyan Full Power",
-        "imgUrl": "/src/assets/img/goku-super.jpg",
+        "imgUrl": "/assets/img/goku-super.jpg",
         "price": 6500,
         "labels": [
             "Dragon Ball Z",
@@ -15,7 +15,7 @@
     {
         "_id": "shf002",
         "name": "Vegeta Saiyan Armor Ver.",
-        "imgUrl": "/src/assets/img/Vegeta-Saiyan.jpg",
+        "imgUrl": "/public/assets/img/Vegeta-Saiyan.jpg",
         "price": 6200,
         "labels": [
             "Dragon Ball Z",
