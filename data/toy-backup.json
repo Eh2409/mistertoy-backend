@@ -1,6 +1,6 @@
 [
     {
-        "_id": "dbz001",
+        "_id": "dbz0012",
         "name": "Super Saiyan Son Goku 'The Games Begin' Action Figure",
         "imgUrl": "/src/assets/img/super-saiyan-son-goku-the-games-begin.jpg",
         "price": 5999,
@@ -16,7 +16,7 @@
         "inStock": true
     },
     {
-        "_id": "dbz002",
+        "_id": "dbz0032",
         "name": "Super Saiyan 4 Son Goku (Mini) -DAIMA- Action Figure",
         "imgUrl": "/src/assets/img/ssj4-goku-mini-daima.jpg",
         "price": 6300,
@@ -32,7 +32,7 @@
         "inStock": false
     },
     {
-        "_id": "dbz003",
+        "_id": "dbz3003",
         "name": "Son Goku (Mini) & Supreme Kai (Mini) - Welcome to the Great Adventure! Statue",
         "imgUrl": "/src/assets/img/son-goku-supreme-kai-daima-statue.jpg",
         "price": 12300,
@@ -47,7 +47,7 @@
         "inStock": false
     },
     {
-        "_id": "dbz004",
+        "_id": "db2004",
         "name": "Super Saiyan God Super Saiyan Vegito Nanoblock Set",
         "imgUrl": "/src/assets/img/ssgss-vegito-nanoblock.jpg",
         "price": 1199,
@@ -63,7 +63,7 @@
         "inStock": true
     },
     {
-        "_id": "dbz005",
+        "_id": "d4z005",
         "name": "Pocket Pop! Keychain Orange Piccolo",
         "imgUrl": "/src/assets/img/orange-piccolo-keychain.jpg",
         "price": 799,
@@ -79,7 +79,7 @@
         "inStock": true
     },
     {
-        "_id": "onep010",
+        "_id": "on4ep010",
         "name": "Monkey D. Luffy Gear 5 'Future Island Egghead' Action Figure",
         "imgUrl": "/src/assets/img/luffy-gear5-egghead.jpg",
         "price": 7500,
@@ -95,7 +95,7 @@
         "inStock": true
     },
     {
-        "_id": "onep011",
+        "_id": "one3011",
         "name": "Yamato & Portgas D. Ace - Bounty Rush 5th Anniversary Figuarts Zero Extra Battle Set",
         "imgUrl": "/src/assets/img/yamato-ace-bounty-rush.jpg",
         "price": 15000,
@@ -110,7 +110,7 @@
         "inStock": true
     },
     {
-        "_id": "onep012",
+        "_id": "o2ep012",
         "name": "DXF The Grandline Lady Wano Country Vol.7 Nami",
         "imgUrl": "/src/assets/img/nami-grandline-lady-wano.jpg",
         "price": 2199,
@@ -125,7 +125,7 @@
         "inStock": true
     },
     {
-        "_id": "onep013",
+        "_id": "1ep013",
         "name": "Pop! Animation: One Piece - Monkey D. Luffy (Gear 5)",
         "imgUrl": "/src/assets/img/luffy-gear5-pop.jpg",
         "price": 1299,
@@ -140,7 +140,7 @@
         "inStock": true
     },
     {
-        "_id": "mha001",
+        "_id": "mh40301",
         "name": "Nanoblock Izuku Midoriya (Ver. 2) Building Set",
         "imgUrl": "/src/assets/img/midoriya-nanoblock.jpg",
         "price": 1199,
@@ -156,7 +156,7 @@
         "inStock": true
     },
     {
-        "_id": "nrt001",
+        "_id": "n4rt001",
         "name": "Nanoblock Naruto Uzumaki (Sage Mode) Building Set",
         "imgUrl": "/src/assets/img/naruto-sage-mode-nanoblock.jpg",
         "price": 1199,
@@ -172,7 +172,7 @@
         "inStock": false
     },
     {
-        "_id": "pknb003",
+        "_id": "pk3nb003",
         "name": "Pokemon Nanoblock Pokemon Series Miraidon Deluxe Edition",
         "imgUrl": "/src/assets/img/miraidon-nanoblock.jpg",
         "price": 3999,
@@ -188,7 +188,7 @@
         "inStock": true
     },
     {
-        "_id": "mha005",
+        "_id": "m2ha005",
         "name": "Pop! Animation: My Hero Academia - Fumikage Tokoyami (Fallen Angel)",
         "imgUrl": "/src/assets/img/tokoyami-fallen-angel.jpg",
         "price": 1039,
@@ -203,7 +203,7 @@
         "inStock": true
     },
     {
-        "_id": "boruto001",
+        "_id": "bo3uto001",
         "name": "Pop! Animation: Boruto: Naruto Next Generations - Boruto with Rasengan",
         "imgUrl": "/src/assets/img/boruto-rasengan.jpg",
         "price": 1169,
@@ -218,7 +218,7 @@
         "inStock": true
     },
     {
-        "_id": "marv002",
+        "_id": "m2a4002",
         "name": "Pop! Marvel: Deadpool - Beauty Pageant Deadpool",
         "imgUrl": "/src/assets/img/deadpool-beauty-pageant.jpg",
         "price": 1039,
@@ -233,7 +233,7 @@
         "inStock": true
     },
     {
-        "_id": "pok001",
+        "_id": "pok0701",
         "name": "Pop! Games: Pokemon S7 - Charizard",
         "imgUrl": "/src/assets/img/Charizard.jpg",
         "price": 1299,
@@ -248,7 +248,7 @@
         "inStock": true
     },
     {
-        "_id": "pok002",
+        "_id": "pok0502",
         "name": "Pop! Games: Pokemon - Oshawott",
         "imgUrl": "/src/assets/img/Oshawott.jpg",
         "price": 1299,
@@ -263,7 +263,7 @@
         "inStock": true
     },
     {
-        "_id": "marvel001",
+        "_id": "mar46vel001",
         "name": "Deadpool & Wolverine S.H.Figuarts Deadpool Action Figure",
         "imgUrl": "/src/assets/img/S.H.Figuarts Deadpool.jpg",
         "price": 8999,
@@ -279,7 +279,7 @@
         "inStock": true
     },
     {
-        "_id": "marvel002",
+        "_id": "marv4el002",
         "name": "Deadpool & Wolverine S.H.Figuarts Wolverine Action Figure",
         "imgUrl": "/src/assets/img/S.H.Figuarts Wolverine.jpg",
         "price": 8499,
@@ -295,7 +295,7 @@
         "inStock": true
     },
     {
-        "_id": "marvel003",
+        "_id": "ma3rv003",
         "name": "Spider-Man: No Way Home Battle Diorama Series Spider-Man (Peter #3) 1/10 Art Scale Limited Edition Statue",
         "imgUrl": "/src/assets/img/Diorama Series Spider-Man.jpg",
         "price": 24999,
@@ -310,7 +310,7 @@
         "inStock": true
     },
     {
-        "_id": "marvel004",
+        "_id": "mar4v04",
         "name": "Marvel Roto-Phunny Groot 8\" Plush",
         "imgUrl": "/src/assets/img/Roto-Phunny Groot.jpg",
         "price": 1699,
@@ -325,7 +325,7 @@
         "inStock": true
     },
     {
-        "_id": "naruto_sage_mode",
+        "_id": "cnytu43",
         "name": "Naruto Uzumaki Sage Mode - Savior of Konoha",
         "imgUrl": "/src/assets/img/Naruto Uzumaki Sage Mode.jpg",
         "price": 9900,
@@ -341,7 +341,7 @@
         "inStock": true
     },
     {
-        "_id": "sakura_narutop99",
+        "_id": "vergt45",
         "name": "Sakura Haruno - NARUTOP99 Edition",
         "imgUrl": "/src/assets/img/Sakura Haruno.jpg",
         "price": 9900,
@@ -357,7 +357,7 @@
         "inStock": true
     },
     {
-        "_id": "izuku_midoriya",
+        "_id": "dfvret5",
         "name": "Izuku Midoriya",
         "imgUrl": "/src/assets/img/Izuku Midoriya.jpg",
         "price": 9900,
@@ -373,7 +373,7 @@
         "inStock": true
     },
     {
-        "_id": "katsuki_bakugo",
+        "_id": "vcerw4",
         "name": "Katsuki Bakugo",
         "imgUrl": "/src/assets/img/Katsuki Bakugo.jpg",
         "price": 9900,
@@ -389,7 +389,7 @@
         "inStock": true
     },
     {
-        "_id": "ochaco_uraraka",
+        "_id": "dscerf43",
         "name": "Ochaco Uraraka",
         "imgUrl": "/src/assets/img/Ochaco Uraraka.jpg",
         "price": 9900,
@@ -405,7 +405,7 @@
         "inStock": true
     },
     {
-        "_id": "gohan_beast_keychain",
+        "_id": "vf3456t",
         "name": "Pocket Pop! Keychain: Dragon Ball: Super Hero - Son Gohan (Beast)",
         "imgUrl": "/src/assets/img/Son Gohan.jpg",
         "price": 799,
@@ -420,7 +420,7 @@
         "inStock": true
     },
     {
-        "_id": "himiko_toga_keychain",
+        "_id": "vvgy564",
         "name": "Pocket Pop! Keychain: My Hero Academia - Himiko Toga (with Face Cover)",
         "imgUrl": "/src/assets/img/Himiko Toga.jpg",
         "price": 799,
@@ -435,7 +435,7 @@
         "inStock": true
     },
     {
-        "_id": "gear5_luffy_plush",
+        "_id": "dsfg65y",
         "name": "One Piece Gear 5 Luffy (Sitting Laugh) 12\" Plush",
         "imgUrl": "/src/assets/img/Luffy Plush.jpg",
         "price": 2399,
@@ -450,7 +450,7 @@
         "inStock": true
     },
     {
-        "_id": "majin_buu_plush",
+        "_id": "vfg567",
         "name": "Dragon Ball Majin Buu 7\" Plush",
         "imgUrl": "/src/assets/img/Majin Buu Plush.jpg",
         "price": 2599,
@@ -465,7 +465,7 @@
         "inStock": true
     },
     {
-        "_id": "deku_plush",
+        "_id": "3fb65u",
         "name": "Pop! Plush: My Hero Academia - Deku",
         "imgUrl": "/src/assets/img/Deku Plush.jpg",
         "price": 1499,
@@ -480,7 +480,7 @@
         "inStock": true
     },
     {
-        "_id": "darumaka_plush",
+        "_id": "dsf346",
         "name": "Pokemon - Darumaka 8\" Plush",
         "imgUrl": "/src/assets/img/darumaka-plush.jpg",
         "price": 1799,
@@ -495,7 +495,7 @@
         "inStock": true
     },
     {
-        "_id": "rosa_snivy_figure",
+        "_id": "324fre",
         "name": "Pokemon ArtFX J Rosa with Snivy 1/8 Scale Figure",
         "imgUrl": "/src/assets/img/rosa-snivy-figure.jpg",
         "price": 17499,
@@ -510,7 +510,7 @@
         "inStock": true
     },
     {
-        "_id": "johto_legendary_set",
+        "_id": "r46hh5",
         "name": "Pokemon Scale World Johto Region Raikou, Entei, & Suicune Set of 3 Figures (Reissue)",
         "imgUrl": "/src/assets/img/johto-legendary-set.jpg",
         "price": 14999,
@@ -525,7 +525,7 @@
         "inStock": true
     },
     {
-        "_id": "pain_keychain",
+        "_id": "dsdf45",
         "name": "Pocket Pop! Keychain: Naruto: Shippuden - Pain",
         "imgUrl": "/src/assets/img/pain-keychain.jpg",
         "price": 799,
@@ -540,7 +540,7 @@
         "inStock": true
     },
     {
-        "id": "deadpool_wolverine_plush",
+        "_id": "34fdg5",
         "name": "Deadpool & Wolverine Phunny Wolverine Plush",
         "imgUrl": "/src/assets/img/deadpool-wolverine-plush.jpg",
         "price": 1699,

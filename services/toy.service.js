@@ -31,12 +31,21 @@ function query(filterBy = {}) {
                 toys = toys.filter(toy => toy.inStock === filterBy.inStock)
             }
 
-            if (filterBy.labels && filterBy.labels.length > 0) {
+            if (filterBy.manufacturer && filterBy.manufacturer.length > 0) {
+                toys = toys.filter(toy => filterBy.manufacturer.includes(toy.manufacturer))
+            }
+
+            if (filterBy.type && filterBy.type.length > 0) {
                 toys = toys.filter(toy => {
-                    return toy.labels.some(label => filterBy.labels.includes(label))
+                    return toy.type.some(type => filterBy.type.includes(type))
                 })
             }
 
+            console.log(filterBy.brand);
+
+            if (filterBy.brand && filterBy.brand.length > 0) {
+                toys = toys.filter(toy => filterBy.brand.includes(toy.brand))
+            }
 
             if (filterBy.sortType === 'name') {
                 toys = toys.sort((t1, t2) => (t1.name.localeCompare(t2.name)) * filterBy.sortDir)

@@ -34,7 +34,9 @@ app.get('/api/toy', (req, res) => {
     const filterBy = {
         name: req.query.name || '',
         price: +req.query.price || 0,
-        labels: req.query.labels || [],
+        manufacturer: req.query.manufacturer || [],
+        type: req.query.type || [],
+        brand: req.query.brand || [],
         inStock: req.query.inStock === 'true' ? true : req.query.inStock === 'false' ? false : undefined,
         pageIdx: +req.query.pageIdx || 0,
         sortType: req.query.sortType || '',
