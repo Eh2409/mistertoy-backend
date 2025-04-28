@@ -32,3 +32,5 @@
 23.4.2025, 11:27:29 - ERROR - cannot remove toy | RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 1
 23.4.2025, 11:50:29 - ERROR - cannot remove toy | ReferenceError: send is not defined
 23.4.2025, 11:50:57 - ERROR - cannot remove toy | ReferenceError: send is not defined
+28.4.2025, 21:42:29 - ERROR - cannot load toy | cannot find toy:undefined
+28.4.2025, 21:43:00 - ERROR - cannot load toy | cannot find toy:undefined

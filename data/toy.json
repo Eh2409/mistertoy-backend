@@ -1,158 +1,557 @@
 [
     {
-        "_id": "shf001",
-        "name": "Goku Super Saiyan Full Power",
-        "imgUrl": "/assets/img/goku-super.jpg",
-        "price": 6500,
-        "labels": [
-            "Dragon Ball Z",
-            "Goku",
-            "Anime"
+        "_id": "dbz001",
+        "name": "Super Saiyan Son Goku 'The Games Begin' Action Figure",
+        "imgUrl": "/src/assets/img/super-saiyan-son-goku-the-games-begin.jpg",
+        "price": 5999,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
         ],
+        "brand": "Dragon Ball",
+        "releaseYear": 2025,
+        "description": "Highly detailed and articulated Super Saiyan Son Goku action figure from the S.H.Figuarts series, capturing the iconic 'The Games Begin' moment.",
         "createdAt": 1713648000000,
         "inStock": true
     },
     {
-        "_id": "shf002",
-        "name": "Vegeta Saiyan Armor Ver.",
-        "imgUrl": "/assets/img/Vegeta-Saiyan.jpg",
-        "price": 6200,
-        "labels": [
-            "Dragon Ball Z",
-            "Vegeta",
-            "Anime"
+        "_id": "dbz002",
+        "name": "Super Saiyan 4 Son Goku (Mini) -DAIMA- Action Figure",
+        "imgUrl": "/src/assets/img/ssj4-goku-mini-daima.jpg",
+        "price": 6300,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
         ],
-        "createdAt": 1713561600000,
-        "inStock": true
-    },
-    {
-        "_id": "shf003",
-        "name": "Frieza Final Form",
-        "imgUrl": "/assets/img/Frieza Final Form.jpg",
-        "price": 6800,
-        "labels": [
-            "Dragon Ball Z",
-            "Frieza",
-            "Anime"
-        ],
-        "createdAt": 1713475200000,
-        "inStock": true
-    },
-    {
-        "_id": "shf004",
-        "name": "Piccolo The Proud Namekian",
-        "imgUrl": "/assets/img/Piccolo The Proud Namekian.jpg",
-        "price": 6000,
-        "labels": [
-            "Dragon Ball Z",
-            "Piccolo",
-            "Anime"
-        ],
-        "createdAt": 1713388800000,
-        "inStock": true
-    },
-    {
-        "_id": "shf005",
-        "name": "Trunks Sword Edition",
-        "imgUrl": "/assets/img/Trunks Sword Edition.jpg",
-        "price": 7200,
-        "labels": [
-            "Dragon Ball Z",
-            "Trunks",
-            "Anime"
-        ],
-        "createdAt": 1713302400000,
+        "brand": "Dragon Ball",
+        "releaseYear": 2025,
+        "description": "A meticulously crafted 80mm Super Saiyan 4 Son Goku (Mini) action figure from Dragon Ball, featuring multiple interchangeable facial expressions and hand parts, along with Kamehameha effect parts for dynamic posing.",
+        "createdAt": 1713648000000,
         "inStock": false
     },
     {
-        "_id": "shf006",
-        "name": "Android 18",
-        "imgUrl": "/assets/img/Android 18.jpg",
-        "price": 5900,
-        "labels": [
-            "Dragon Ball Z",
-            "Android 18",
-            "Anime"
+        "_id": "dbz003",
+        "name": "Son Goku (Mini) & Supreme Kai (Mini) - Welcome to the Great Adventure! Statue",
+        "imgUrl": "/src/assets/img/son-goku-supreme-kai-daima-statue.jpg",
+        "price": 12300,
+        "manufacturer": "Bandai",
+        "type": [
+            "Statue"
         ],
-        "createdAt": 1713216000000,
+        "brand": "Dragon Ball",
+        "releaseYear": 2025,
+        "description": "A highly detailed 230mm non-articulated statue from the FiguartsZERO series, featuring Mini Son Goku and Mini Supreme Kai riding a dragon. The backdrop showcases the three stages of the Demon Realm, with intricate sculpting capturing every detail from the original key visual. The reverse side includes a 3D-etched Dragon Ball logo, making it a standout piece for collectors.",
+        "createdAt": 1713648000000,
+        "inStock": false
+    },
+    {
+        "_id": "dbz004",
+        "name": "Super Saiyan God Super Saiyan Vegito Nanoblock Set",
+        "imgUrl": "/src/assets/img/ssgss-vegito-nanoblock.jpg",
+        "price": 1199,
+        "manufacturer": "Kawada",
+        "type": [
+            "Building Set",
+            "Nanoblock"
+        ],
+        "brand": "Dragon Ball",
+        "releaseYear": 2025,
+        "description": "A 170-piece Nanoblock set to build Super Saiyan God Super Saiyan Vegito from Dragon Ball. Standing approximately 2.44 inches tall, this Level 3 difficulty set is perfect for display once completed.",
+        "createdAt": 1713648000000,
         "inStock": true
     },
     {
-        "_id": "shf007",
-        "name": "Majin Buu (Evil)",
-        "imgUrl": "/assets/img/Majin Buu (Evil).jpg",
-        "price": 8000,
-        "labels": [
-            "Dragon Ball Z",
-            "Majin Buu",
-            "Anime"
+        "_id": "dbz005",
+        "name": "Pocket Pop! Keychain Orange Piccolo",
+        "imgUrl": "/src/assets/img/orange-piccolo-keychain.jpg",
+        "price": 799,
+        "manufacturer": "Funko",
+        "type": [
+            "Keychain",
+            "Vinyl Figure"
         ],
-        "createdAt": 1713129600000,
+        "brand": "Dragon Ball",
+        "releaseYear": 2025,
+        "description": "Featuring Orange Piccolo from Dragon Ball: Super Hero, this Pocket Pop! keychain stands about 1.5 inches tall and captures the Power Awakening state of your favorite Namekian warrior in vinyl form. Perfect for both display and everyday use.",
+        "createdAt": 1714435200000,
         "inStock": true
     },
     {
-        "_id": "shf008",
-        "name": "Cell Perfect Form",
-        "imgUrl": "/assets/img/Cell Perfect Form.jpg",
-        "price": 7900,
-        "labels": [
-            "Dragon Ball Z",
-            "Cell",
-            "Anime"
+        "_id": "onep010",
+        "name": "Monkey D. Luffy Gear 5 'Future Island Egghead' Action Figure",
+        "imgUrl": "/src/assets/img/luffy-gear5-egghead.jpg",
+        "price": 7500,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
         ],
-        "createdAt": 1713043200000,
-        "inStock": true
-    },
-    {
-        "_id": "shf009",
-        "name": "Gohan Beast Mode",
-        "imgUrl": "/assets/img/Gohan Beast Mode.jpg",
-        "price": 7000,
-        "labels": [
-            "Dragon Ball Z",
-            "Gohan",
-            "Anime"
-        ],
+        "brand": "One Piece",
+        "releaseYear": 2025,
+        "description": "An intricately detailed action figure of Monkey D. Luffy in his Gear 5 form from the 'Future Island Egghead' arc, featuring dynamic articulation and multiple accessories to recreate iconic poses.",
         "createdAt": 1712956800000,
         "inStock": true
     },
     {
-        "_id": "shf010",
-        "name": "Broly Legendary Super Saiyan",
-        "imgUrl": "/assets/img/Broly Legendary Super Saiyan.jpg",
-        "price": 8500,
-        "labels": [
-            "Dragon Ball Z",
-            "Broly",
-            "Anime"
+        "_id": "onep011",
+        "name": "Yamato & Portgas D. Ace - Bounty Rush 5th Anniversary Figuarts Zero Extra Battle Set",
+        "imgUrl": "/src/assets/img/yamato-ace-bounty-rush.jpg",
+        "price": 15000,
+        "manufacturer": "Bandai",
+        "type": [
+            "Statue"
         ],
-        "createdAt": 1712870400000,
-        "inStock": false
-    },
-    {
-        "_id": "shf011",
-        "name": "Tien Shinhan & Chiaotzu",
-        "imgUrl": "/assets/img/Tien Shinhan & Chiaotzu.jpg",
-        "price": 6600,
-        "labels": [
-            "Dragon Ball Z",
-            "Tien",
-            "Anime"
-        ],
-        "createdAt": 1712784000000,
+        "brand": "One Piece",
+        "releaseYear": 2025,
+        "description": "A dynamic 2-figure set featuring Yamato and Portgas D. Ace from the One Piece Bounty Rush 5th Anniversary, capturing their iconic battle poses with intricate detailing and vibrant effects.",
+        "createdAt": 1712956800000,
         "inStock": true
     },
     {
-        "_id": "shf012",
-        "name": "Cooler Final Form -40th Anniversary-",
-        "imgUrl": "/assets/img/Cooler Final Form.jpg",
-        "price": 9000,
-        "labels": [
-            "Dragon Ball Z",
-            "Cooler",
-            "Anime"
+        "_id": "onep012",
+        "name": "DXF The Grandline Lady Wano Country Vol.7 Nami",
+        "imgUrl": "/src/assets/img/nami-grandline-lady-wano.jpg",
+        "price": 2199,
+        "manufacturer": "Banpresto",
+        "type": [
+            "Statue"
         ],
-        "createdAt": 1712697600000,
+        "brand": "One Piece",
+        "releaseYear": 2025,
+        "description": "A beautifully detailed 7-inch statue of Nami in her Wano Country outfit, part of Banpresto's Grandline Lady series. This non-articulated figure captures Nami's elegance and strength, making it a perfect addition to any One Piece collection.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "onep013",
+        "name": "Pop! Animation: One Piece - Monkey D. Luffy (Gear 5)",
+        "imgUrl": "/src/assets/img/luffy-gear5-pop.jpg",
+        "price": 1299,
+        "manufacturer": "Funko",
+        "type": [
+            "Vinyl Figure"
+        ],
+        "brand": "One Piece",
+        "releaseYear": 2025,
+        "description": "Monkey D. Luffy is determined to become the Pirate King by finding Gol D. Roger's legendary treasure. Complete your scurvy crew by adding this Pop! Luffy Gear Five to your One Piece collection! Vinyl figure is approximately 5.35 inches tall.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "mha001",
+        "name": "Nanoblock Izuku Midoriya (Ver. 2) Building Set",
+        "imgUrl": "/src/assets/img/midoriya-nanoblock.jpg",
+        "price": 1199,
+        "manufacturer": "Kawada",
+        "type": [
+            "Building Set",
+            "Nanoblock"
+        ],
+        "brand": "My Hero Academia",
+        "releaseYear": 2025,
+        "description": "A detailed Nanoblock set to build Izuku Midoriya (Ver. 2) from My Hero Academia. Standing approximately 2.95 inches tall, this Level 2 difficulty set is perfect for display once completed.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "nrt001",
+        "name": "Nanoblock Naruto Uzumaki (Sage Mode) Building Set",
+        "imgUrl": "/src/assets/img/naruto-sage-mode-nanoblock.jpg",
+        "price": 1199,
+        "manufacturer": "Kawada",
+        "type": [
+            "Building Set",
+            "Nanoblock"
+        ],
+        "brand": "Naruto",
+        "releaseYear": 2025,
+        "description": "A detailed Nanoblock set to build Naruto Uzumaki in his Sage Mode from Naruto: Shippuden. Standing approximately 3.07 inches tall, this Level 3 difficulty set is perfect for display once completed.",
+        "createdAt": 1712956800000,
+        "inStock": false
+    },
+    {
+        "_id": "pknb003",
+        "name": "Pokemon Nanoblock Pokemon Series Miraidon Deluxe Edition",
+        "imgUrl": "/src/assets/img/miraidon-nanoblock.jpg",
+        "price": 3999,
+        "manufacturer": "Kawada",
+        "type": [
+            "Building Set",
+            "Nanoblock"
+        ],
+        "brand": "Pokemon",
+        "releaseYear": 2025,
+        "description": "A detailed Nanoblock set to build Miraidon, the futuristic Legendary Pokemon from Pokemon Scarlet. Standing approximately 6.21 inches tall, this Level 5 difficulty set contains 1,080 pieces and is perfect for display once completed.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "mha005",
+        "name": "Pop! Animation: My Hero Academia - Fumikage Tokoyami (Fallen Angel)",
+        "imgUrl": "/src/assets/img/tokoyami-fallen-angel.jpg",
+        "price": 1039,
+        "manufacturer": "Funko",
+        "type": [
+            "Vinyl Figure"
+        ],
+        "brand": "My Hero Academia",
+        "releaseYear": 2025,
+        "description": "Fumikage Tokoyami, a hero-in-training at U.A. High School, is depicted in his Fallen Angel form. This 5.25-inch vinyl figure captures his unique quirk, Dark Shadow, in a stylized urban design.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "boruto001",
+        "name": "Pop! Animation: Boruto: Naruto Next Generations - Boruto with Rasengan",
+        "imgUrl": "/src/assets/img/boruto-rasengan.jpg",
+        "price": 1169,
+        "manufacturer": "Funko",
+        "type": [
+            "Vinyl Figure"
+        ],
+        "brand": "Naruto",
+        "releaseYear": 2025,
+        "description": "Boruto Uzumaki, the son of Naruto, is depicted in this Pop! figure wielding his signature Rasengan. Standing approximately 4.55 inches tall, this vinyl figure captures Boruto's youthful energy and determination.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "marv002",
+        "name": "Pop! Marvel: Deadpool - Beauty Pageant Deadpool",
+        "imgUrl": "/src/assets/img/deadpool-beauty-pageant.jpg",
+        "price": 1039,
+        "manufacturer": "Funko",
+        "type": [
+            "Vinyl Figure"
+        ],
+        "brand": "Marvel",
+        "releaseYear": 2025,
+        "description": "Deadpool is all dressed up in a crown and sash that says 'World’s Prettiest Merc.' This 4.53-inch vinyl figure captures Deadpool's quirky charm in an urban stylized design.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "pok001",
+        "name": "Pop! Games: Pokemon S7 - Charizard",
+        "imgUrl": "/src/assets/img/Charizard.jpg",
+        "price": 1299,
+        "manufacturer": "Funko",
+        "type": [
+            "Vinyl Figure"
+        ],
+        "brand": "Pokemon",
+        "releaseYear": 2025,
+        "description": "Charizard, the Fire/Flying-type Pokemon, is featured in this stylized Pop! figure from Funko's Pokemon Series 7. Standing approximately 3.75 inches tall, this vinyl figure captures Charizard's fierce and iconic appearance.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "pok002",
+        "name": "Pop! Games: Pokemon - Oshawott",
+        "imgUrl": "/src/assets/img/Oshawott.jpg",
+        "price": 1299,
+        "manufacturer": "Funko",
+        "type": [
+            "Vinyl Figure"
+        ],
+        "brand": "Pokemon",
+        "releaseYear": 2025,
+        "description": "Oshawott, the Water-type Pokemon, is featured in this stylized Pop! figure from Funko's Pokemon series. Standing approximately 2.8 inches tall, this vinyl figure showcases Oshawott's playful and determined nature.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "marvel001",
+        "name": "Deadpool & Wolverine S.H.Figuarts Deadpool Action Figure",
+        "imgUrl": "/src/assets/img/S.H.Figuarts Deadpool.jpg",
+        "price": 8999,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
+        ],
+        "brand": "Marvel",
+        "releaseYear": 2025,
+        "description": "Deadpool from the movie Deadpool and Wolverine joins S.H.Figuarts! This Deadpool S.H.Figuarts Action Figure measures approximately 6 inches tall. Deadpool appears with a suit model and coloring updated to the design of the movie. A wide variety of optional parts are included, allowing you to recreate Deadpool's character as you wish, including his brilliant actions and comical facial expressions. 'Headpool' that appears in the film is also included.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "marvel002",
+        "name": "Deadpool & Wolverine S.H.Figuarts Wolverine Action Figure",
+        "imgUrl": "/src/assets/img/S.H.Figuarts Wolverine.jpg",
+        "price": 8499,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
+        ],
+        "brand": "Marvel",
+        "releaseYear": 2025,
+        "description": "Wolverine from the Deadpool and Wolverine movie joins S.H.Figuarts! This Wolverine S.H.Figuarts Action Figure measures approximately 6 inches tall. Wolverine appears with a suit model and coloring updated to the design of the movie. A wide variety of optional parts are included, allowing you to recreate Wolverine's character as you wish, including his brilliant actions and comical facial expressions.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "marvel003",
+        "name": "Spider-Man: No Way Home Battle Diorama Series Spider-Man (Peter #3) 1/10 Art Scale Limited Edition Statue",
+        "imgUrl": "/src/assets/img/Diorama Series Spider-Man.jpg",
+        "price": 24999,
+        "manufacturer": "Iron Studios",
+        "type": [
+            "Statue"
+        ],
+        "brand": "Marvel",
+        "releaseYear": 2025,
+        "description": "From the movie Spider-Man: No Way Home, Iron Studios presents the Battle Diorama Series Spider-Man (Peter #3) 1/10 Art Scale Limited Edition Statue. This highly detailed statue captures Spider-Man in a dynamic pose, showcasing the intricate design and craftsmanship that Iron Studios is known for.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "marvel004",
+        "name": "Marvel Roto-Phunny Groot 8\" Plush",
+        "imgUrl": "/src/assets/img/Roto-Phunny Groot.jpg",
+        "price": 1699,
+        "manufacturer": "Kidrobot",
+        "type": [
+            "Plush"
+        ],
+        "brand": "Marvel",
+        "releaseYear": 2025,
+        "description": "I AM GROOT. That’s all you need to know about the most eloquent member of Marvel’s Guardians of the Galaxy, except that he’s also available as a cuddly Roto-Phunny plush. Measuring 8 inches seated (he’s still growing) and with rotoscoped arms and legs, what the Groot Phunny lacks in word variety he makes up in sheer softness.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "naruto_sage_mode",
+        "name": "Naruto Uzumaki Sage Mode - Savior of Konoha",
+        "imgUrl": "/src/assets/img/Naruto Uzumaki Sage Mode.jpg",
+        "price": 9900,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
+        ],
+        "brand": "Naruto",
+        "releaseYear": 2024,
+        "description": "Naruto Uzumaki in Sage Mode, as seen in 'Naruto'. This figure includes multiple interchangeable parts, allowing for dynamic posing and display.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "sakura_narutop99",
+        "name": "Sakura Haruno - NARUTOP99 Edition",
+        "imgUrl": "/src/assets/img/Sakura Haruno.jpg",
+        "price": 9900,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
+        ],
+        "brand": "Naruto",
+        "releaseYear": 2024,
+        "description": "Sakura Haruno in the NARUTOP99 Edition, featuring updated detailing and accessories. A must-have for collectors.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "izuku_midoriya",
+        "name": "Izuku Midoriya",
+        "imgUrl": "/src/assets/img/Izuku Midoriya.jpg",
+        "price": 9900,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
+        ],
+        "brand": "My Hero Academia",
+        "releaseYear": 2024,
+        "description": "Izuku Midoriya, the aspiring hero from 'My Hero Academia', captured in this highly detailed figure.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "katsuki_bakugo",
+        "name": "Katsuki Bakugo",
+        "imgUrl": "/src/assets/img/Katsuki Bakugo.jpg",
+        "price": 9900,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
+        ],
+        "brand": "My Hero Academia",
+        "releaseYear": 2024,
+        "description": "Katsuki Bakugo, known for his explosive personality and abilities, in this dynamic figure.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "ochaco_uraraka",
+        "name": "Ochaco Uraraka",
+        "imgUrl": "/src/assets/img/Ochaco Uraraka.jpg",
+        "price": 9900,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure",
+            "S.H.Figuarts"
+        ],
+        "brand": "My Hero Academia",
+        "releaseYear": 2024,
+        "description": "Ochaco Uraraka, with her gravity-defying quirk, featured in this detailed figure.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "gohan_beast_keychain",
+        "name": "Pocket Pop! Keychain: Dragon Ball: Super Hero - Son Gohan (Beast)",
+        "imgUrl": "/src/assets/img/Son Gohan.jpg",
+        "price": 799,
+        "manufacturer": "Funko",
+        "type": [
+            "Keychain"
+        ],
+        "brand": "Dragon Ball",
+        "releaseYear": 2024,
+        "description": "Son Gohan in his Beast form from Dragon Ball: Super Hero is captured in this Pocket Pop! keychain.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "himiko_toga_keychain",
+        "name": "Pocket Pop! Keychain: My Hero Academia - Himiko Toga (with Face Cover)",
+        "imgUrl": "/src/assets/img/Himiko Toga.jpg",
+        "price": 799,
+        "manufacturer": "Funko",
+        "type": [
+            "Keychain"
+        ],
+        "brand": "My Hero Academia",
+        "releaseYear": 2024,
+        "description": "The ranks of your My Hero Academia collection may be blindsided by Pop! Keychain Himiko Toga's ferocity. This member of the League of Villains is ready to use her Transform quirk as a means of fighting the Pro Heroes in your My Hero Academia collection.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "gear5_luffy_plush",
+        "name": "One Piece Gear 5 Luffy (Sitting Laugh) 12\" Plush",
+        "imgUrl": "/src/assets/img/Luffy Plush.jpg",
+        "price": 2399,
+        "manufacturer": "Great Eastern Entertainment",
+        "type": [
+            "Plush"
+        ],
+        "brand": "One Piece",
+        "releaseYear": 2025,
+        "description": "Collect all your favorite One Piece characters with these awesome plushies! Bring home Luffy in his new Gear 5 form. High quality, cute, collectible, and limited availability! The laughing plush measures about 12 inches tall and makes the perfect gift or accessory for any anime fan!",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "majin_buu_plush",
+        "name": "Dragon Ball Majin Buu 7\" Plush",
+        "imgUrl": "/src/assets/img/Majin Buu Plush.jpg",
+        "price": 2599,
+        "manufacturer": "Great Eastern Entertainment",
+        "type": [
+            "Plush"
+        ],
+        "brand": "Dragon Ball",
+        "releaseYear": 2025,
+        "description": "Add a touch of anime magic to your collection with these Dragon Ball plushies by Great Eastern Entertainment. Officially licensed and crafted with exceptional quality, these plushies feature your favorite Dragon Ball characters in an adorable, collectible design.",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "deku_plush",
+        "name": "Pop! Plush: My Hero Academia - Deku",
+        "imgUrl": "/src/assets/img/Deku Plush.jpg",
+        "price": 1499,
+        "manufacturer": "Funko",
+        "type": [
+            "Plush"
+        ],
+        "brand": "My Hero Academia",
+        "releaseYear": 2025,
+        "description": "Pop! Plushies brings you the familiar, stylized design based on My Hero Academia in cuddly, plush material. At about 7 inches tall, these plushies are great for your sofa, or to display on a shelf!",
+        "createdAt": 1712956800000,
+        "inStock": true
+    },
+    {
+        "_id": "darumaka_plush",
+        "name": "Pokemon - Darumaka 8\" Plush",
+        "imgUrl": "/src/assets/img/darumaka-plush.jpg",
+        "price": 1799,
+        "manufacturer": "Jazwares Inc",
+        "type": [
+            "Plush"
+        ],
+        "brand": "Pokemon",
+        "releaseYear": 2024,
+        "description": "Gotta catch 'em all! Add the fiery Darumaka to your collection with this soft and cuddly 8-inch plush, perfect for hugging or display!",
+        "createdAt": 1714416000000,
+        "inStock": true
+    },
+    {
+        "_id": "rosa_snivy_figure",
+        "name": "Pokemon ArtFX J Rosa with Snivy 1/8 Scale Figure",
+        "imgUrl": "/src/assets/img/rosa-snivy-figure.jpg",
+        "price": 17499,
+        "manufacturer": "Kotobukiya",
+        "type": [
+            "Action Figure"
+        ],
+        "brand": "Pokemon",
+        "releaseYear": 2024,
+        "description": "Rosa strikes a dynamic pose with Snivy in this detailed 1/8 scale figure from Kotobukiya’s ArtFX J series, perfect for Pokemon collectors!",
+        "createdAt": 1714416000000,
+        "inStock": true
+    },
+    {
+        "_id": "johto_legendary_set",
+        "name": "Pokemon Scale World Johto Region Raikou, Entei, & Suicune Set of 3 Figures (Reissue)",
+        "imgUrl": "/src/assets/img/johto-legendary-set.jpg",
+        "price": 14999,
+        "manufacturer": "Bandai",
+        "type": [
+            "Action Figure"
+        ],
+        "brand": "Pokemon",
+        "releaseYear": 2024,
+        "description": "From the Johto Region, Raikou, Entei, and Suicune join the Pokemon Scale World lineup! This 1/20 scale PVC set is a must-have for any Pokemon collector.",
+        "createdAt": 1714416000000,
+        "inStock": true
+    },
+    {
+        "_id": "pain_keychain",
+        "name": "Pocket Pop! Keychain: Naruto: Shippuden - Pain",
+        "imgUrl": "/src/assets/img/pain-keychain.jpg",
+        "price": 799,
+        "manufacturer": "Funko",
+        "type": [
+            "Keychain"
+        ],
+        "brand": "Naruto",
+        "releaseYear": 2024,
+        "description": "Nagato, under the alias Pain, sought peace through power. Now you can carry him everywhere with this stylized 4-inch Pocket Pop! vinyl keychain from Naruto: Shippuden!",
+        "createdAt": 1714416000000,
+        "inStock": true
+    },
+    {
+        "id": "deadpool_wolverine_plush",
+        "name": "Deadpool & Wolverine Phunny Wolverine Plush",
+        "imgUrl": "/src/assets/img/deadpool-wolverine-plush.jpg",
+        "price": 1699,
+        "manufacturer": "Kidrobot",
+        "type": [
+            "Plush"
+        ],
+        "brand": "Marvel",
+        "releaseYear": 2025,
+        "description": "Snikt! Bring superhuman strength, longevity, and agility to your collection with this Wolverine Phunny Plush by Kidrobot! Designed with soft materials and embroidered details, this plush will let everyone see your fandom for Wolverine and the X-Men. This mutant is a stand-out Super Hero ready to team up with an unexpected ally in Marvel Studios' Deadpool & Wolverine.",
+        "createdAt": 1714416000000,
         "inStock": true
     }
 ]
