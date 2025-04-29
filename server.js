@@ -63,7 +63,7 @@ app.get('/api/toy/:toyId', (req, res) => {
 })
 
 app.post('/api/toy', (req, res) => {
-    const { name, price, imgUrl, labels } = req.body
+    const { name, price, imgUrl, manufacturer, type, brand, releaseYear, description } = req.body
     if (!name || price < 0) return res.status(400).send('Missing required fields')
 
 
@@ -71,7 +71,11 @@ app.post('/api/toy', (req, res) => {
         name,
         price: +price || 0,
         imgUrl: imgUrl || '',
-        labels: labels || [],
+        manufacturer: manufacturer || '',
+        type: type || [],
+        brand: brand || '',
+        description: description || '',
+        releaseYear: releaseYear || 0,
     }
 
     toyService.save(toyToSave)
@@ -83,8 +87,7 @@ app.post('/api/toy', (req, res) => {
 })
 
 app.put('/api/toy/:toyId', (req, res) => {
-    console.log('PUT:', req.body);
-    const { _id, name, price, imgUrl, labels, inStock } = req.body
+    const { _id, name, price, imgUrl, manufacturer, type, brand, releaseYear, description, inStock } = req.body
     if (!_id || !name || price < 0) return res.status(400).send('Missing required fields')
 
     const toyToSave = {
@@ -92,7 +95,11 @@ app.put('/api/toy/:toyId', (req, res) => {
         name,
         price: +price || 0,
         imgUrl: imgUrl || '',
-        labels: labels || [],
+        manufacturer: manufacturer || '',
+        type: type || [],
+        brand: brand || '',
+        description: description || '',
+        releaseYear: releaseYear || 0,
         inStock: inStock || true
     }
 

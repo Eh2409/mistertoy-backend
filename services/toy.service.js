@@ -41,8 +41,6 @@ function query(filterBy = {}) {
                 })
             }
 
-            console.log(filterBy.brand);
-
             if (filterBy.brand && filterBy.brand.length > 0) {
                 toys = toys.filter(toy => filterBy.brand.includes(toy.brand))
             }
