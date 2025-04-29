@@ -1,3 +1,4 @@
+import { log } from "console"
 import { utilService } from "./util.service.js"
 import fs from 'fs'
 
@@ -7,6 +8,7 @@ export const toyService = {
     get,
     remove,
     save,
+    getChartsData
 }
 
 const toys = utilService.readJsonFile('data/toy.json')
@@ -106,4 +108,47 @@ function _saveToysToFile() {
             resolve()
         })
     })
+}
+
+function getChartsData() {
+    return Promise.resolve({
+        byBrands: _getToysPercentagesByField('brand'),
+        byManufacturers: _getToysPercentagesByField('manufacturer'),
+        byTypes: _getToysPercentagesByField('type'),
+        byReleaseYear: _getToysPercentagesByField('releaseYear')
+    })
+}
+
+function _getToysPercentagesByField(field) {
+    const countMap = field === 'type' ? countByArryField(field) : countByField(field)
+    const PercentagesMap = Object.keys(countMap).map(name =>
+    ({
+        name,
+        items: countMap[name],
+        percentage: Math.round((countMap[name] / toys.length) * 100)
+    }))
+    return PercentagesMap
+}
+
+
+function countByField(field) {
+    const countMap = toys.reduce((acc, toy) => {
+        const toyField = toy[field]
+        if (!acc[toyField]) acc[toyField] = 1
+        else acc[toyField] += 1
+        return acc
+    }, {})
+    return countMap
+}
+
+function countByArryField(field) {
+    const countMap = toys.reduce((acc, toy) => {
+        toy[field].map(item => {
+            if (!acc[item]) acc[item] = 1
+            else acc[item] += 1
+            return acc
+        })
+        return acc
+    }, {})
+    return countMap
 }

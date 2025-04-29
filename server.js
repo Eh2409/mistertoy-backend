@@ -51,6 +51,16 @@ app.get('/api/toy', (req, res) => {
         })
 })
 
+app.get('/api/toy/charts', (req, res) => {
+    toyService.getChartsData()
+        .then(data => res.send(data))
+        .catch(err => {
+            loggerService.error('cannot load charts data', err)
+            res.status(500).send('cannot load charts data')
+        })
+})
+
+
 app.get('/api/toy/:toyId', (req, res) => {
     const { toyId } = req.params
 
