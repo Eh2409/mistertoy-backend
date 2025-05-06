@@ -8,11 +8,47 @@ export const toyService = {
     get,
     remove,
     save,
-    getChartsData
+    getChartsData,
+    getLabels
 }
 
 const toys = utilService.readJsonFile('data/toy.json')
 const PAGE_SIZE = 12
+
+const labels = {
+    brands: [
+        'Dragon Ball',
+        'One Piece',
+        'My Hero Academia',
+        'Naruto',
+        'Marvel',
+        'Pokemon',
+        'other'
+    ],
+    types: [
+        'Action Figure',
+        'S.H.Figuarts',
+        'Statue',
+        'Building Set',
+        'Nanoblock',
+        'Keychain',
+        'Vinyl Figure',
+        'Plush',
+        'other'
+    ],
+    manufacturers: [
+        'Kawada',
+        'Funko',
+        'Banpresto',
+        'Iron Studios',
+        'Kidrobot',
+        'Bandai',
+        'Great Eastern Entertainment',
+        'Jazwares Inc',
+        'Kotobukiya',
+        'other'
+    ]
+}
 
 function query(filterBy = {}) {
 
@@ -151,4 +187,9 @@ function countByArryField(field) {
         return acc
     }, {})
     return countMap
+}
+
+
+function getLabels() {
+    return Promise.resolve(labels)
 }
