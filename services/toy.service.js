@@ -1,7 +1,6 @@
-import { log } from "console"
+import { error, log } from "console"
 import { utilService } from "./util.service.js"
-import fs from 'fs'
-
+import { promises as fs } from 'fs'
 
 export const toyService = {
     query,
@@ -50,73 +49,73 @@ const labels = {
     ]
 }
 
-function query(filterBy = {}) {
+async function query(filterBy = {}) {
 
-    return Promise.resolve(toys)
-        .then(toys => {
+    let filteredToys = structuredClone(toys)
 
+    if (filterBy.name) {
+        const regExp = new RegExp(filterBy.name, 'i')
+        filteredToys = filteredToys.filter(toy => regExp.test(toy.name))
+    }
 
-            if (filterBy.name) {
-                const regExp = new RegExp(filterBy.name, 'i')
-                toys = toys.filter(toy => regExp.test(toy.name))
-            }
+    if (filterBy.price) {
+        filteredToys = filteredToys.filter(toy => toy.price >= filterBy.price)
+    }
 
-            if (filterBy.price) {
-                toys = toys.filter(toy => toy.price >= filterBy.price)
-            }
+    if (filterBy.inStock !== undefined) {
+        filteredToys = filteredToys.filter(toy => toy.inStock === filterBy.inStock)
+    }
 
-            if (filterBy.inStock !== undefined) {
-                toys = toys.filter(toy => toy.inStock === filterBy.inStock)
-            }
+    if (filterBy.manufacturer && filterBy.manufacturer.length > 0) {
+        filteredToys = filteredToys.filter(toy => filterBy.manufacturer.includes(toy.manufacturer))
+    }
 
-            if (filterBy.manufacturer && filterBy.manufacturer.length > 0) {
-                toys = toys.filter(toy => filterBy.manufacturer.includes(toy.manufacturer))
-            }
-
-            if (filterBy.type && filterBy.type.length > 0) {
-                toys = toys.filter(toy => {
-                    return toy.type.some(type => filterBy.type.includes(type))
-                })
-            }
-
-            if (filterBy.brand && filterBy.brand.length > 0) {
-                toys = toys.filter(toy => filterBy.brand.includes(toy.brand))
-            }
-
-            if (filterBy.sortType === 'name') {
-                toys = toys.sort((t1, t2) => (t1.name.localeCompare(t2.name)) * filterBy.sortDir)
-            }
-            if (filterBy.sortType === 'price') {
-                toys = toys.sort((t1, t2) => (t1.price - t2.price) * filterBy.sortDir)
-            }
-            if (filterBy.sortType === 'createdAt') {
-                toys = toys.sort((t1, t2) => (t1.createdAt - t2.createdAt) * filterBy.sortDir)
-            }
-
-            const maxPageCount = Math.ceil(toys.length / PAGE_SIZE)
-
-
-            const pageIdx = filterBy.pageIdx ? filterBy.pageIdx : 0
-            const startIdx = pageIdx * PAGE_SIZE
-            toys = toys.slice(startIdx, startIdx + PAGE_SIZE)
-
-
-            return { toys, maxPageCount }
+    if (filterBy.type && filterBy.type.length > 0) {
+        filteredToys = filteredToys.filter(toy => {
+            return toy.type.some(type => filterBy.type.includes(type))
         })
-}
-function get(toyId) {
-    const toy = toys.find(toy => toy._id === toyId)
-    if (!toy) return Promise.reject('cannot find toy:' + toyId)
-    return Promise.resolve(toy)
-}
-function remove(toyId) {
-    const toyIdx = toys.findIndex(toy => toy._id === toyId)
-    if (toyIdx === -1) return Promise.reject('cannot find toy:' + toyId)
-    toys.splice(toyIdx, 1)
-    return _saveToysToFile().then(() => ({ maxPageCount: _getMaxPageCount() }))
+    }
+
+    if (filterBy.brand && filterBy.brand.length > 0) {
+        filteredToys = filteredToys.filter(toy => filterBy.brand.includes(toy.brand))
+    }
+
+    if (filterBy.sortType === 'name') {
+        filteredToys = filteredToys.sort((t1, t2) => (t1.name.localeCompare(t2.name)) * filterBy.sortDir)
+    }
+    if (filterBy.sortType === 'price') {
+        filteredToys = filteredToys.sort((t1, t2) => (t1.price - t2.price) * filterBy.sortDir)
+    }
+    if (filterBy.sortType === 'createdAt') {
+        filteredToys = filteredToys.sort((t1, t2) => (t1.createdAt - t2.createdAt) * filterBy.sortDir)
+    }
+
+    const maxPageCount = Math.ceil(filteredToys.length / PAGE_SIZE)
+
+    if (filterBy.pageIdx !== undefined) {
+        const pageIdx = filterBy.pageIdx ? filterBy.pageIdx : 0
+        const startIdx = pageIdx * PAGE_SIZE
+        filteredToys = filteredToys.slice(startIdx, startIdx + PAGE_SIZE)
+    }
+
+    return { toys: filteredToys, maxPageCount }
 }
 
-function save(toyToSave) {
+async function get(toyId) {
+    const toy = toys.find(toy => toy._id === toyId)
+    if (!toy) throw new Error('cannot find toy:' + toyId)
+    return toy
+}
+
+async function remove(toyId) {
+    const toyIdx = toys.findIndex(toy => toy._id === toyId)
+    if (toyIdx === -1) throw new Error('cannot find toy:' + toyId)
+    toys.splice(toyIdx, 1)
+    await _saveToysToFile()
+    return { maxPageCount: _getMaxPageCount() }
+}
+
+async function save(toyToSave) {
     if (toyToSave._id) {
         const toyIdx = toys.findIndex(toy => toy._id === toyToSave._id)
         toys[toyIdx] = { ...toys[toyIdx], ...toyToSave }
@@ -127,32 +126,32 @@ function save(toyToSave) {
         toyToSave.inStock = true
         toys.unshift(toyToSave)
     }
-    return _saveToysToFile().then(() => toyToSave)
+
+    await _saveToysToFile()
+    return toyToSave
 }
 
 function _getMaxPageCount() {
     return Math.ceil(toys.length / PAGE_SIZE)
 }
 
-function _saveToysToFile() {
-    return new Promise((resolve, reject) => {
-        const data = JSON.stringify(toys, null, 4)
-        fs.writeFile('data/toy.json', data, (err) => {
-            if (err) {
-                return reject(err)
-            }
-            resolve()
-        })
-    })
+
+async function _saveToysToFile() {
+    const data = JSON.stringify(toys, null, 4)
+    try {
+        await fs.writeFile('data/toy.json', data)
+    } catch (err) {
+        throw err
+    }
 }
 
-function getChartsData() {
-    return Promise.resolve({
+async function getChartsData() {
+    return {
         byBrands: _getToysPercentagesByField('brand'),
         byManufacturers: _getToysPercentagesByField('manufacturer'),
         byTypes: _getToysPercentagesByField('type'),
         byReleaseYear: _getToysPercentagesByField('releaseYear')
-    })
+    }
 }
 
 function _getToysPercentagesByField(field) {
@@ -190,6 +189,6 @@ function countByArryField(field) {
 }
 
 
-function getLabels() {
-    return Promise.resolve(labels)
+async function getLabels() {
+    return labels
 }
