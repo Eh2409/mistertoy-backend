@@ -42,3 +42,6 @@
 29.4.2025, 2:45:22 - ERROR - cannot load toy | cannot find toy:undefined
 29.4.2025, 18:43:43 - ERROR - cannot load toy | cannot find toy:chart
 29.4.2025, 18:43:44 - ERROR - cannot load toy | cannot find toy:chart
+12.5.2025, 2:37:36 - ERROR - cannot load user | Error: cannot find user - fmqwq3et
+12.5.2025, 2:39:13 - ERROR - cannot remove user | TypeError: Cannot read properties of undefined (reading 'send')
+12.5.2025, 2:42:13 - ERROR - cannot remove user | Error: cannot remove user - df

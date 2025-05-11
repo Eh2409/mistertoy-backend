@@ -1,0 +1,23 @@
+[
+    {
+        "username": "e33",
+        "password": "3333",
+        "fullname": "eliad",
+        "_id": "fmqwq3",
+        "isAdmin": true
+    },
+    {
+        "_id": "u102",
+        "username": "shalom100",
+        "fullname": "shalom al lehem",
+        "password": "200",
+        "isAdmin": false
+    },
+    {
+        "_id": "u103",
+        "username": "goat",
+        "fullname": "goat the goat",
+        "password": "300",
+        "isAdmin": false
+    }
+]
