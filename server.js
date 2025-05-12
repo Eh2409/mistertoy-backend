@@ -1,4 +1,6 @@
-import path from 'path'
+import path, { dirname } from 'path'
+import { fileURLToPath } from 'url'
+
 import express from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
@@ -8,6 +10,8 @@ import { toyService } from './services/toy.service.js'
 import { userService } from './services/user.service.js'
 import { authService } from './services/auth.service.js'
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const app = express()
 
@@ -15,141 +19,155 @@ app.use(express.static('public'))
 app.use(cookieParser())
 app.use(express.json())
 
-const corsOptions = {
-    origin: [
-        'http://localhost:5173',
-        'http://127.0.0.1:5173',
-        'http://localhost:5174',
-        'http://127.0.0.1:5174',
-        'http://127.0.0.1:3000',
-        'http://localhost:3000',
-    ],
-    credentials: true,
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve(__dirname, 'public')))
+} else {
+    const corsOptions = {
+        origin: [
+            'http://localhost:5173',
+            'http://127.0.0.1:5173',
+            'http://localhost:5174',
+            'http://127.0.0.1:5174',
+            'http://127.0.0.1:3000',
+            'http://localhost:3000',
+        ],
+        credentials: true,
+    }
+    app.use(cors(corsOptions))
 }
-app.use(cors(corsOptions))
 
 
 
-// toy api
 
-app.get('/api/toy', async (req, res) => {
+import { toyRoutes } from './api/toy/toy.routes.js'
 
-    const filterBy = {
-        name: req.query.name || '',
-        price: +req.query.price || 0,
-        manufacturer: req.query.manufacturer || [],
-        type: req.query.type || [],
-        brand: req.query.brand || [],
-        inStock: req.query.inStock === 'true' ? true : req.query.inStock === 'false' ? false : undefined,
-        pageIdx: +req.query.pageIdx || 0,
-        sortType: req.query.sortType || '',
-        sortDir: +req.query.sortDir || 0,
-    }
+// routes
 
-    try {
-        const data = await toyService.query(filterBy)
-        res.send(data)
-    } catch (err) {
-        loggerService.error('cannot load toys', err)
-        res.status(500).send('cannot load toys')
-    }
-})
-
-app.get('/api/toy/charts', async (req, res) => {
-    try {
-        const data = await toyService.getChartsData()
-        res.send(data)
-    } catch (err) {
-        loggerService.error('cannot load charts data', err)
-        res.status(500).send('cannot load charts data')
-    }
-})
-
-app.get('/api/toy/labels', async (req, res) => {
-    try {
-        const labels = await toyService.getLabels()
-        res.send(labels)
-    } catch (err) {
-        loggerService.error('cannot load labels data', err)
-        res.status(500).send('cannot load labels data')
-    }
-})
+app.use('/api/toy', toyRoutes)
 
 
-app.get('/api/toy/:toyId', async (req, res) => {
-    const { toyId } = req.params
-
-    try {
-        const toy = await toyService.get(toyId)
-        res.send(toy)
-    } catch (err) {
-        loggerService.error('cannot load toy', err)
-        res.status(500).send('cannot load toy')
-    }
-})
-
-app.post('/api/toy', async (req, res) => {
-    const { name, price, imgUrl, manufacturer, type, brand, releaseYear, description } = req.body
-    if (!name || price < 0) return res.status(400).send('Missing required fields')
 
 
-    const toyToSave = {
-        name,
-        price: +price || 0,
-        imgUrl: imgUrl || '',
-        manufacturer: manufacturer || '',
-        type: type || [],
-        brand: brand || '',
-        description: description || '',
-        releaseYear: releaseYear || 0,
-    }
+// // toy api
 
-    try {
-        const toy = await toyService.save(toyToSave)
-        res.send(toy)
-    } catch (err) {
-        loggerService.error('cannot save toy', err)
-        res.status(500).send('cannot save toy')
-    }
-})
+// app.get('/api/toy', async (req, res) => {
 
-app.put('/api/toy/:toyId', async (req, res) => {
-    const { _id, name, price, imgUrl, manufacturer, type, brand, releaseYear, description, inStock } = req.body
-    if (!_id || !name || price < 0) return res.status(400).send('Missing required fields')
+//     const filterBy = {
+//         name: req.query.name || '',
+//         price: +req.query.price || 0,
+//         manufacturer: req.query.manufacturer || [],
+//         type: req.query.type || [],
+//         brand: req.query.brand || [],
+//         inStock: req.query.inStock === 'true' ? true : req.query.inStock === 'false' ? false : undefined,
+//         pageIdx: +req.query.pageIdx || 0,
+//         sortType: req.query.sortType || '',
+//         sortDir: +req.query.sortDir || 0,
+//     }
 
-    const toyToSave = {
-        _id,
-        name,
-        price: +price || 0,
-        imgUrl: imgUrl || '',
-        manufacturer: manufacturer || '',
-        type: type || [],
-        brand: brand || '',
-        description: description || '',
-        releaseYear: releaseYear || 0,
-        inStock: inStock || true
-    }
+//     try {
+//         const data = await toyService.query(filterBy)
+//         res.send(data)
+//     } catch (err) {
+//         loggerService.error('cannot load toys', err)
+//         res.status(500).send('cannot load toys')
+//     }
+// })
 
-    try {
-        const toy = await toyService.save(toyToSave)
-        res.send(toy)
-    } catch (err) {
-        loggerService.error('cannot save toy', err)
-        res.status(500).send('cannot save toy')
-    }
-})
+// app.get('/api/toy/charts', async (req, res) => {
+//     try {
+//         const data = await toyService.getChartsData()
+//         res.send(data)
+//     } catch (err) {
+//         loggerService.error('cannot load charts data', err)
+//         res.status(500).send('cannot load charts data')
+//     }
+// })
 
-app.delete('/api/toy/:toyId', async (req, res) => {
-    const { toyId } = req.params
+// app.get('/api/toy/labels', async (req, res) => {
+//     try {
+//         const labels = await toyService.getLabels()
+//         res.send(labels)
+//     } catch (err) {
+//         loggerService.error('cannot load labels data', err)
+//         res.status(500).send('cannot load labels data')
+//     }
+// })
 
-    try {
-        const data = await toyService.remove(toyId)
-        res.send(data)
-    } catch (err) {
-        loggerService.error('cannot remove toy', err)
-        res.status(500).send('cannot remove toy')
-    }
-})
+
+// app.get('/api/toy/:toyId', async (req, res) => {
+//     const { toyId } = req.params
+
+//     try {
+//         const toy = await toyService.get(toyId)
+//         res.send(toy)
+//     } catch (err) {
+//         loggerService.error('cannot load toy', err)
+//         res.status(500).send('cannot load toy')
+//     }
+// })
+
+// app.post('/api/toy', async (req, res) => {
+//     const { name, price, imgUrl, manufacturer, type, brand, releaseYear, description } = req.body
+//     if (!name || price < 0) return res.status(400).send('Missing required fields')
+
+
+//     const toyToSave = {
+//         name,
+//         price: +price || 0,
+//         imgUrl: imgUrl || '',
+//         manufacturer: manufacturer || '',
+//         type: type || [],
+//         brand: brand || '',
+//         description: description || '',
+//         releaseYear: releaseYear || 0,
+//     }
+
+//     try {
+//         const toy = await toyService.save(toyToSave)
+//         res.send(toy)
+//     } catch (err) {
+//         loggerService.error('cannot save toy', err)
+//         res.status(500).send('cannot save toy')
+//     }
+// })
+
+// app.put('/api/toy/:toyId', async (req, res) => {
+//     const { _id, name, price, imgUrl, manufacturer, type, brand, releaseYear, description, inStock } = req.body
+//     if (!_id || !name || price < 0) return res.status(400).send('Missing required fields')
+
+//     const toyToSave = {
+//         _id,
+//         name,
+//         price: +price || 0,
+//         imgUrl: imgUrl || '',
+//         manufacturer: manufacturer || '',
+//         type: type || [],
+//         brand: brand || '',
+//         description: description || '',
+//         releaseYear: releaseYear || 0,
+//         inStock: inStock || true
+//     }
+
+//     try {
+//         const toy = await toyService.save(toyToSave)
+//         res.send(toy)
+//     } catch (err) {
+//         loggerService.error('cannot save toy', err)
+//         res.status(500).send('cannot save toy')
+//     }
+// })
+
+// app.delete('/api/toy/:toyId', async (req, res) => {
+//     const { toyId } = req.params
+
+//     try {
+//         const data = await toyService.remove(toyId)
+//         res.send(data)
+//     } catch (err) {
+//         loggerService.error('cannot remove toy', err)
+//         res.status(500).send('cannot remove toy')
+//     }
+// })
 
 // user
 

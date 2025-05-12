@@ -62,3 +62,28 @@
 12.5.2025, 5:04:48 - ERROR - Invalid credentials | Error: Login failed
 12.5.2025, 5:06:08 - ERROR - Invalid credentials | Error: Login failed
 12.5.2025, 5:07:06 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 10:38:56 - ERROR - cannot load labels data | TypeError: toyService.getLabels is not a function
+12.5.2025, 10:39:02 - ERROR - cannot load labels data | TypeError: toyService.getLabels is not a function
+12.5.2025, 11:33:38 - ERROR - cannot load charts data | TypeError: toyService.getChartsData is not a function
+12.5.2025, 11:33:44 - ERROR - cannot load charts data | TypeError: toyService.getChartsData is not a function
+12.5.2025, 12:02:57 - ERROR - cannot load toy | ReferenceError: logger is not defined
+12.5.2025, 12:03:00 - ERROR - cannot load toy | ReferenceError: logger is not defined
+12.5.2025, 12:03:49 - ERROR - while finding toy undefined | ReferenceError: ObjectId is not defined
+12.5.2025, 12:03:49 - ERROR - cannot load toy | ReferenceError: ObjectId is not defined
+12.5.2025, 12:05:14 - ERROR - while finding toy undefined | BSONError: hex string must be 24 characters
+12.5.2025, 12:05:14 - ERROR - cannot load toy | BSONError: hex string must be 24 characters
+12.5.2025, 12:07:25 - ERROR - cannot load toy | BSONError: hex string must be 24 characters
+12.5.2025, 12:07:25 - ERROR - while finding toy undefined | BSONError: hex string must be 24 characters
+12.5.2025, 12:08:17 - ERROR - while finding toy undefined | BSONError: hex string must be 24 characters
+12.5.2025, 12:08:17 - ERROR - cannot load toy | BSONError: hex string must be 24 characters
+12.5.2025, 12:15:58 - ERROR - cannot remove toy | ReferenceError: toys is not defined
+12.5.2025, 12:20:26 - ERROR - cannot remove toy | ReferenceError: carService is not defined
+12.5.2025, 12:20:45 - ERROR - cannot remove toy | ReferenceError: carService is not defined
+12.5.2025, 23:46:22 - ERROR - cannot save toy | ReferenceError: logger is not defined
+12.5.2025, 23:47:13 - ERROR - cannot save toy | ReferenceError: car is not defined
+12.5.2025, 23:47:47 - ERROR - cannot save toy | MongoServerError: Performing an update on the path '_id' would modify the immutable field '_id'
+12.5.2025, 23:47:47 - ERROR - cannot update toy 6821a1f5b427b5e5c72bbc0b | MongoServerError: Performing an update on the path '_id' would modify the immutable field '_id'
+13.5.2025, 1:28:33 - ERROR - cannot load toys | MongoInvalidArgumentError: Operation "limit" requires an integer
+13.5.2025, 1:28:33 - ERROR - Cannot load toys | MongoInvalidArgumentError: Operation "limit" requires an integer
+13.5.2025, 2:05:09 - ERROR - cannot get maxPageCount | ReferenceError: collection is not defined
+13.5.2025, 2:05:09 - ERROR - cannot remove toy | ReferenceError: collection is not defined
