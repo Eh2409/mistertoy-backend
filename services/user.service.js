@@ -12,7 +12,15 @@ export const userService = {
 const users = utilService.readJsonFile('data/user.json')
 
 async function query() {
-    return users
+    const usersToReturn = users.map(user => {
+        return ({
+            _id: user._id,
+            username: user.username,
+            fullname: user.fullname,
+            isAdmin: user.isAdmin
+        })
+    })
+    return usersToReturn
 }
 
 async function getById(userId) {

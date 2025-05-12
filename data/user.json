@@ -1,12 +1,5 @@
 [
     {
-        "_id": "lxjKXd",
-        "username": "435",
-        "fullname": "shalom al lehem",
-        "password": "200",
-        "isAdmin": false
-    },
-    {
         "username": "e33",
         "password": "3333",
         "fullname": "eliad",
