@@ -24,7 +24,7 @@ async function getById(userId) {
 }
 
 async function getByUsername(username) {
-    const user = user.find(user => user.username === username)
+    const user = users.find(user => user.username === username)
     return user
 }
 
@@ -46,8 +46,11 @@ async function add(user) {
         if (existingUser) throw new Error('Username taken')
 
         user._id = utilService.makeId()
+        user.isAdmin = false
+
         users.unshift(user)
         await _saveUsersToFile()
+
         user = { ...user }
         delete user.password
         return user

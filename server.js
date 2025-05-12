@@ -6,6 +6,8 @@ import cookieParser from 'cookie-parser'
 import { loggerService } from './services/logger.service.js'
 import { toyService } from './services/toy.service.js'
 import { userService } from './services/user.service.js'
+import { authService } from './services/auth.service.js'
+
 
 const app = express()
 
@@ -181,6 +183,50 @@ app.delete('/api/user/:userId', async (req, res) => {
     } catch (err) {
         loggerService.error('cannot remove user', err)
         res.status(500).send('cannot remove user')
+    }
+})
+
+// auth
+
+app.post('/api/auth/login', async (req, res) => {
+    const credentials = req.body
+
+    try {
+        const user = await authService.checkLogin(credentials)
+        const loginToken = authService.getLoginToken(user)
+        res.cookie('loginToken', loginToken)
+        res.send(user)
+    } catch (err) {
+        loggerService.error('Invalid credentials', err)
+        res.status(400).send('Invalid credentials')
+    }
+})
+
+app.post('/api/auth/signup', async (req, res) => {
+    const credentials = req.body
+
+    try {
+        const user = await userService.add(credentials)
+        if (user) {
+            const loginToken = authService.getLoginToken(user)
+            res.cookie('loginToken', loginToken)
+            res.send(user)
+        } else {
+            res.status(400).send('Cannot singup')
+        }
+    } catch (err) {
+        loggerService.error('Invalid credentials', err)
+        res.status(400).send('Invalid credentials')
+    }
+})
+
+app.post('/api/auth/logout', (req, res) => {
+    try {
+        res.clearCookie('loginToken')
+        res.send('logged-out')
+    } catch (err) {
+        console.error('Logout error:', err)
+        res.status(500).send('Logout failed')
     }
 })
 

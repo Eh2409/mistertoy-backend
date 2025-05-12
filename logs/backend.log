@@ -45,3 +45,17 @@
 12.5.2025, 2:37:36 - ERROR - cannot load user | Error: cannot find user - fmqwq3et
 12.5.2025, 2:39:13 - ERROR - cannot remove user | TypeError: Cannot read properties of undefined (reading 'send')
 12.5.2025, 2:42:13 - ERROR - cannot remove user | Error: cannot remove user - df
+12.5.2025, 3:38:52 - ERROR - Invalid credentials | ReferenceError: Cannot access 'user' before initialization
+12.5.2025, 3:39:07 - ERROR - Invalid credentials | ReferenceError: Cannot access 'user' before initialization
+12.5.2025, 3:39:52 - ERROR - Invalid credentials | ReferenceError: Cannot access 'user' before initialization
+12.5.2025, 3:40:50 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:42:31 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:42:54 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:42:54 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:42:55 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:42:56 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:42:57 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:43:20 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:43:21 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:43:22 - ERROR - Invalid credentials | Error: Username taken
+12.5.2025, 3:45:31 - ERROR - Invalid credentials | Error: Username taken
