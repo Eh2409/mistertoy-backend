@@ -130,3 +130,6 @@
 13.5.2025, 18:58:43 - ERROR - cannot load toys | TypeError: Assignment to constant variable.
 13.5.2025, 18:58:54 - ERROR - cannot load toys | TypeError: Assignment to constant variable.
 13.5.2025, 18:58:54 - ERROR - Cannot load toys | TypeError: Assignment to constant variable.
+13.5.2025, 23:14:42 - DEBUG - auth.service - signup with username: muki, fullname: 2222
+13.5.2025, 23:19:28 - DEBUG - auth.service - signup with username: 333, fullname: 333
+13.5.2025, 23:19:39 - ERROR - cannot save toy | ReferenceError: req is not defined

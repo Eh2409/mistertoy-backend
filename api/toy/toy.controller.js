@@ -59,8 +59,10 @@ export async function getToyById(req, res) {
 }
 
 export async function addToy(req, res) {
+    const { loggedinUser } = req
+
     const { name, price, imgUrl, manufacturer, type, brand, releaseYear, description, inStock } = req.body
-    if (!name || price < 0 || !brand) return res.status(400).send('Missing required fields')
+    if (!name || price < 0 || !brand, !loggedinUser) return res.status(400).send('Missing required fields')
 
 
     const toyToSave = {
@@ -72,7 +74,8 @@ export async function addToy(req, res) {
         brand: brand || '',
         description: description || '',
         releaseYear: releaseYear || 0,
-        inStock: inStock || true
+        inStock: inStock || true,
+        owner: loggedinUser
     }
 
     try {
