@@ -123,3 +123,4 @@
 13.5.2025, 5:07:23 - ERROR - Invalid credentials | Error: Login failed
 13.5.2025, 5:11:51 - ERROR - Invalid credentials | Error: Login failed
 13.5.2025, 5:12:39 - DEBUG - auth.service - signup with username: e33, fullname: Eliad
+13.5.2025, 5:17:14 - DEBUG - auth.service - signup with username: mega man, fullname: 100
