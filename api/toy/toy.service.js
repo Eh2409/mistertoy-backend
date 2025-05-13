@@ -55,6 +55,7 @@ async function query(filterBy = {}) {
         const { criteria, sort, skip } = _buildCriteria(filterBy)
 
         const collection = await dbService.getCollection('toy')
+
         const toys = await collection
             .find(criteria)
             .sort(sort)
@@ -62,6 +63,7 @@ async function query(filterBy = {}) {
             .limit(PAGE_SIZE)
             .toArray()
 
+        // const totalToys = toys.length
         const totalToys = await collection.countDocuments(criteria)
         const maxPageCount = Math.ceil(totalToys / PAGE_SIZE)
 
@@ -209,15 +211,15 @@ function _buildCriteria(filterBy) {
         criteria.inStock = filterBy.inStock
     }
 
-    if (filterBy.manufacturer.length > 0) {
+    if (filterBy.manufacturer && filterBy.manufacturer.length > 0) {
         criteria.manufacturer = { $in: filterBy.manufacturer }
     }
 
-    if (filterBy.type.length > 0) {
+    if (filterBy.type && filterBy.type.length > 0) {
         criteria.type = { $in: filterBy.type }
     }
 
-    if (filterBy.brand.length > 0) {
+    if (filterBy.brand && filterBy.brand.length > 0) {
         criteria.brand = { $in: filterBy.brand }
     }
 
@@ -226,6 +228,8 @@ function _buildCriteria(filterBy) {
         const dir = filterBy.sortDir
         const sortType = filterBy.sortType === 'createdAt' ? '_id' : filterBy.sortType
         sort[sortType] = dir
+    } else {
+        sort['_id'] = filterBy.sortDir
     }
 
     const skip = filterBy.pageIdx !== undefined ? filterBy.pageIdx * PAGE_SIZE : 0

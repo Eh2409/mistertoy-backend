@@ -124,3 +124,9 @@
 13.5.2025, 5:11:51 - ERROR - Invalid credentials | Error: Login failed
 13.5.2025, 5:12:39 - DEBUG - auth.service - signup with username: e33, fullname: Eliad
 13.5.2025, 5:17:14 - DEBUG - auth.service - signup with username: mega man, fullname: 100
+13.5.2025, 18:58:20 - ERROR - cannot load toys | TypeError: collection.toArray is not a function
+13.5.2025, 18:58:20 - ERROR - Cannot load toys | TypeError: collection.toArray is not a function
+13.5.2025, 18:58:43 - ERROR - Cannot load toys | TypeError: Assignment to constant variable.
+13.5.2025, 18:58:43 - ERROR - cannot load toys | TypeError: Assignment to constant variable.
+13.5.2025, 18:58:54 - ERROR - cannot load toys | TypeError: Assignment to constant variable.
+13.5.2025, 18:58:54 - ERROR - Cannot load toys | TypeError: Assignment to constant variable.
