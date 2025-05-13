@@ -41,11 +41,13 @@ if (process.env.NODE_ENV === 'production') {
 
 import { toyRoutes } from './api/toy/toy.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
+import { authRoutes } from './api/auth/auth.routes.js'
 
 // routes
 
 app.use('/api/toy', toyRoutes)
 app.use('/api/user', userRoutes)
+app.use('/api/auth', authRoutes)
 
 
 
@@ -208,47 +210,47 @@ app.use('/api/user', userRoutes)
 
 // auth
 
-app.post('/api/auth/login', async (req, res) => {
-    const credentials = req.body
+// app.post('/api/auth/login', async (req, res) => {
+//     const credentials = req.body
 
-    try {
-        const user = await authService.checkLogin(credentials)
-        const loginToken = authService.getLoginToken(user)
-        res.cookie('loginToken', loginToken)
-        res.send(user)
-    } catch (err) {
-        loggerService.error('Invalid credentials', err)
-        res.status(400).send('Invalid credentials')
-    }
-})
+//     try {
+//         const user = await authService.checkLogin(credentials)
+//         const loginToken = authService.getLoginToken(user)
+//         res.cookie('loginToken', loginToken)
+//         res.send(user)
+//     } catch (err) {
+//         loggerService.error('Invalid credentials', err)
+//         res.status(400).send('Invalid credentials')
+//     }
+// })
 
-app.post('/api/auth/signup', async (req, res) => {
-    const credentials = req.body
+// app.post('/api/auth/signup', async (req, res) => {
+//     const credentials = req.body
 
-    try {
-        const user = await userService.add(credentials)
-        if (user) {
-            const loginToken = authService.getLoginToken(user)
-            res.cookie('loginToken', loginToken)
-            res.send(user)
-        } else {
-            res.status(400).send('Cannot singup')
-        }
-    } catch (err) {
-        loggerService.error('Invalid credentials', err)
-        res.status(400).send('Invalid credentials')
-    }
-})
+//     try {
+//         const user = await userService.add(credentials)
+//         if (user) {
+//             const loginToken = authService.getLoginToken(user)
+//             res.cookie('loginToken', loginToken)
+//             res.send(user)
+//         } else {
+//             res.status(400).send('Cannot singup')
+//         }
+//     } catch (err) {
+//         loggerService.error('Invalid credentials', err)
+//         res.status(400).send('Invalid credentials')
+//     }
+// })
 
-app.post('/api/auth/logout', (req, res) => {
-    try {
-        res.clearCookie('loginToken')
-        res.send('logged-out')
-    } catch (err) {
-        console.error('Logout error:', err)
-        res.status(500).send('Logout failed')
-    }
-})
+// app.post('/api/auth/logout', (req, res) => {
+//     try {
+//         res.clearCookie('loginToken')
+//         res.send('logged-out')
+//     } catch (err) {
+//         console.error('Logout error:', err)
+//         res.status(500).send('Logout failed')
+//     }
+// })
 
 
 app.get('/**', (req, res) => {

@@ -101,3 +101,25 @@
 13.5.2025, 3:08:29 - ERROR - cannot load user | TypeError: Assignment to constant variable.
 13.5.2025, 3:09:31 - ERROR - Cannot find user 68228a9da94bacad1d8734a3 | TypeError: Assignment to constant variable.
 13.5.2025, 3:09:31 - ERROR - cannot load user | TypeError: Assignment to constant variable.
+13.5.2025, 4:41:23 - DEBUG - auth.service - signup with username: kaka, fullname: 2222
+13.5.2025, 4:41:23 - ERROR - Cannot find user kaka | BSONError: hex string must be 24 characters
+13.5.2025, 4:41:23 - ERROR - Invalid credentials | BSONError: hex string must be 24 characters
+13.5.2025, 4:43:05 - DEBUG - auth.service - signup with username: kaka, fullname: 2222
+13.5.2025, 4:43:05 - ERROR - Cannot find user kaka | BSONError: hex string must be 24 characters
+13.5.2025, 4:43:05 - ERROR - Invalid credentials | BSONError: hex string must be 24 characters
+13.5.2025, 4:45:26 - DEBUG - auth.service - signup with username: kaka, fullname: 2222
+13.5.2025, 4:45:37 - ERROR - Invalid credentials | Error: Login failed
+13.5.2025, 4:47:11 - ERROR - Invalid credentials | Error: Login failed
+13.5.2025, 4:49:18 - DEBUG - auth.service - signup with username: e33, fullname: eliad
+13.5.2025, 4:56:22 - DEBUG - auth.service - signup with username: e33, fullname: Eliad
+13.5.2025, 4:56:22 - ERROR - Invalid credentials | ReferenceError: username is not defined
+13.5.2025, 5:00:00 - DEBUG - auth.service - signup with username: 2, fullname: 2
+13.5.2025, 5:00:00 - ERROR - Invalid credentials | ReferenceError: username is not defined
+13.5.2025, 5:01:19 - DEBUG - auth.service - signup with username: 2, fullname: 2
+13.5.2025, 5:01:52 - ERROR - Invalid credentials | Error: Login failed
+13.5.2025, 5:03:26 - DEBUG - auth.service - signup with username: e, fullname: e
+13.5.2025, 5:03:31 - ERROR - Invalid credentials | Error: Login failed
+13.5.2025, 5:06:19 - ERROR - Invalid credentials | Error: Login failed
+13.5.2025, 5:07:23 - ERROR - Invalid credentials | Error: Login failed
+13.5.2025, 5:11:51 - ERROR - Invalid credentials | Error: Login failed
+13.5.2025, 5:12:39 - DEBUG - auth.service - signup with username: e33, fullname: Eliad

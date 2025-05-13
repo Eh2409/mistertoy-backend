@@ -46,7 +46,7 @@ async function getById(userId) {
 async function getByUsername(username) {
     try {
         const collection = await dbService.getCollection('user')
-        const user = await collection.findOne({ _id: ObjectId.createFromHexString(username) })
+        const user = await collection.findOne({ username })
         return user
     } catch (err) {
         loggerService.error(`Cannot find user ${username}`, err)
@@ -67,19 +67,19 @@ async function remove(userId) {
 
 async function add(user) {
     try {
-        const { username, password, fullname } = user
-        if (!username || !password || !fullname) {
-            throw new Error('Missing required fields')
-        }
-
-        const existingUser = await getByUsername(username)
+        const existingUser = await getByUsername(user.username)
         if (existingUser) throw new Error('Username taken')
 
-        const collection = await dbService.getCollection('toy')
-        await collection.insertOne(user)
-        user = { ...user }
-        delete user.password
-        return user
+        const userToAdd = {
+            username: user.username,
+            password: user.password,
+            fullname: user.fullname,
+            isAdmin: false,
+        }
+
+        const collection = await dbService.getCollection('user')
+        await collection.insertOne(userToAdd)
+        return userToAdd
 
     } catch (err) {
         console.error('Failed to add user', err)
