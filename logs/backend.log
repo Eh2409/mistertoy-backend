@@ -133,3 +133,16 @@
 13.5.2025, 23:14:42 - DEBUG - auth.service - signup with username: muki, fullname: 2222
 13.5.2025, 23:19:28 - DEBUG - auth.service - signup with username: 333, fullname: 333
 13.5.2025, 23:19:39 - ERROR - cannot save toy | ReferenceError: req is not defined
+13.5.2025, 23:36:05 - ERROR - Invalid credentials | Error: Login failed
+14.5.2025, 1:40:39 - ERROR - cannot save message | TypeError: toyService.savedMsg is not a function
+14.5.2025, 1:41:18 - ERROR - cannot save message | TypeError: toyService.savedMsg is not a function
+14.5.2025, 1:41:44 - ERROR - cannot add message to toy | ReferenceError: msg is not defined
+14.5.2025, 1:41:44 - ERROR - cannot save message | ReferenceError: msg is not defined
+14.5.2025, 1:42:28 - ERROR - cannot add message to toy | ReferenceError: utilService is not defined
+14.5.2025, 1:42:28 - ERROR - cannot save message | ReferenceError: utilService is not defined
+14.5.2025, 1:43:33 - ERROR - cannot add message to toy | ReferenceError: msg is not defined
+14.5.2025, 1:43:33 - ERROR - cannot save message | ReferenceError: msg is not defined
+14.5.2025, 1:48:53 - ERROR - Invalid credentials | Error: Login failed
+14.5.2025, 1:48:55 - DEBUG - auth.service - signup with username: 22, fullname: 22
+14.5.2025, 3:35:33 - WARN - 22attempted to perform admin action
+14.5.2025, 3:42:01 - ERROR - Invalid credentials | Error: Login failed

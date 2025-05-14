@@ -1,7 +1,7 @@
 import { ObjectId } from 'mongodb'
 import { dbService } from "../../services/db.service.js"
 import { loggerService } from "../../services/logger.service.js"
-
+import { utilService } from "../../services/util.service.js"
 
 export const toyService = {
     query,
@@ -10,7 +10,9 @@ export const toyService = {
     get,
     remove,
     add,
-    update
+    update,
+    saveMsg,
+    removeMsg
 }
 
 const labels = {
@@ -235,4 +237,37 @@ function _buildCriteria(filterBy) {
 
     const skip = filterBy.pageIdx !== undefined ? filterBy.pageIdx * PAGE_SIZE : 0
     return { criteria, sort, skip }
+}
+
+
+
+async function saveMsg(toyId, msgToSave) {
+    try {
+        msgToSave.id = utilService.makeId()
+        msgToSave.createAt = Date.now()
+
+        const collection = await dbService.getCollection('toy')
+        await collection.updateOne(
+            { _id: ObjectId.createFromHexString(toyId) },
+            { $push: { msgs: msgToSave } }
+        )
+        return msgToSave
+    } catch (err) {
+        loggerService.error('cannot add message to toy', err)
+        throw err
+    }
+}
+
+async function removeMsg(toyId, msgId) {
+    try {
+        const collection = await dbService.getCollection('toy')
+        await collection.updateOne(
+            { _id: ObjectId.createFromHexString(toyId) },
+            { $pull: { msgs: { id: msgId } } }
+        )
+        return msgId
+    } catch (err) {
+        loggerService.error('cannot remove message to toy', err)
+        throw err
+    }
 }

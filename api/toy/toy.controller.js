@@ -89,7 +89,7 @@ export async function addToy(req, res) {
 
 
 export async function updateToy(req, res) {
-    const { _id, name, price, imgUrl, manufacturer, type, brand, releaseYear, description, inStock } = req.body
+    const { _id, name, price, imgUrl, manufacturer, type, brand, releaseYear, description, inStock, owner } = req.body
     if (!_id || !name || price < 0 || !brand) return res.status(400).send('Missing required fields')
 
     const toyToSave = {
@@ -101,7 +101,8 @@ export async function updateToy(req, res) {
         brand: brand || '',
         description: description || '',
         releaseYear: releaseYear || 0,
-        inStock: inStock || true
+        inStock: inStock || true,
+        owner
     }
 
     const toyId = req.params.id
@@ -123,5 +124,44 @@ export async function removeToy(req, res) {
     } catch (err) {
         loggerService.error('cannot remove toy', err)
         res.status(500).send('cannot remove toy')
+    }
+}
+
+
+
+export async function addMsg(req, res) {
+    const { loggedinUser } = req
+    const { txt } = req.body
+    if (!txt) return res.status(400).send('Missing required fields')
+
+    try {
+        const { _id, fullname } = loggedinUser
+
+        const msgToSave = {
+            txt,
+            by: { _id, fullname }
+        }
+        const toyId = req.params.id
+
+        const savedMsg = await toyService.saveMsg(toyId, msgToSave)
+        res.send(savedMsg)
+    } catch (err) {
+        loggerService.error('cannot save message', err)
+        res.status(500).send('cannot save message')
+    }
+}
+
+export async function removeMsg(req, res) {
+    try {
+        const { msgId } = req.params
+        if (!msgId) return res.status(400).send('Missing required fields')
+
+        const toyId = req.params.id
+
+        const removedMsg = await toyService.removeMsg(toyId, msgId)
+        res.send(removedMsg)
+    } catch (err) {
+        loggerService.error('cannot remove message', err)
+        res.status(500).send('cannot remove message')
     }
 }
