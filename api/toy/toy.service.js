@@ -96,7 +96,7 @@ async function remove(toyId) {
         const { deletedCount } = await collection.deleteOne({ _id: ObjectId.createFromHexString(toyId) })
         return deletedCount
     } catch (err) {
-        logger.error(`cannot remove toy ${toyId}`, err)
+        loggerService.error(`cannot remove toy ${toyId}`, err)
         throw err
     }
 }

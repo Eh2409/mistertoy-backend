@@ -146,3 +146,36 @@
 14.5.2025, 1:48:55 - DEBUG - auth.service - signup with username: 22, fullname: 22
 14.5.2025, 3:35:33 - WARN - 22attempted to perform admin action
 14.5.2025, 3:42:01 - ERROR - Invalid credentials | Error: Login failed
+16.5.2025, 0:21:25 - ERROR - Invalid credentials | Error: Login failed
+16.5.2025, 16:54:03 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:54:03 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:54:07 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:54:07 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:54:12 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:54:12 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:54:30 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:54:30 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:55:39 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:55:39 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:56:19 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:56:19 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:58:01 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:58:01 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:59:12 - ERROR - Cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 16:59:12 - ERROR - cannot load toys | ReferenceError: logger is not defined
+16.5.2025, 17:00:05 - ERROR - Failed to get Mongo collection | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:00:05 - ERROR - Cannot Connect to DB | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:00:05 - ERROR - Cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:00:05 - ERROR - cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:01:35 - ERROR - Cannot Connect to DB | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:01:35 - ERROR - Failed to get Mongo collection | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:01:35 - ERROR - Cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:01:35 - ERROR - cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:29 - ERROR - Cannot Connect to DB | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:29 - ERROR - Failed to get Mongo collection | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:29 - ERROR - Cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:29 - ERROR - cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:30 - ERROR - Cannot Connect to DB | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:30 - ERROR - Failed to get Mongo collection | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:30 - ERROR - Cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+16.5.2025, 17:03:30 - ERROR - cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
