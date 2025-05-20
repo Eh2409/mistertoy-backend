@@ -179,3 +179,4 @@
 16.5.2025, 17:03:30 - ERROR - Failed to get Mongo collection | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
 16.5.2025, 17:03:30 - ERROR - Cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
 16.5.2025, 17:03:30 - ERROR - cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+20.5.2025, 2:24:33 - DEBUG - auth.service - signup with username: 23, fullname: 2323

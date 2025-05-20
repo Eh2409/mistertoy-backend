@@ -62,7 +62,7 @@ export async function addToy(req, res) {
     const { loggedinUser } = req
 
     const { name, price, imgUrl, manufacturer, type, brand, releaseYear, description, inStock, msgs, imgUrls } = req.body
-    if (!name || price < 0 || !brand, !loggedinUser) return res.status(400).send('Missing required fields')
+    if (!name || price < 0 || !brand || !loggedinUser) return res.status(400).send('Missing required fields')
 
 
     const toyToSave = {

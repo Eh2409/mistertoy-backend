@@ -5,6 +5,10 @@ import express from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 
+import { toyRoutes } from './api/toy/toy.routes.js'
+import { userRoutes } from './api/user/user.routes.js'
+import { authRoutes } from './api/auth/auth.routes.js'
+import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -33,11 +37,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-import { toyRoutes } from './api/toy/toy.routes.js'
-import { userRoutes } from './api/user/user.routes.js'
-import { authRoutes } from './api/auth/auth.routes.js'
 
-// routes
+
+app.use('/**', setupAsyncLocalStorage)
 
 app.use('/api/toy', toyRoutes)
 app.use('/api/user', userRoutes)

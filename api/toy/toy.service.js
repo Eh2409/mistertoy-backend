@@ -90,7 +90,6 @@ async function get(toyId) {
 }
 
 async function remove(toyId) {
-    console.log('jaja:')
     try {
         const collection = await dbService.getCollection('toy')
         const { deletedCount } = await collection.deleteOne({ _id: ObjectId.createFromHexString(toyId) })
