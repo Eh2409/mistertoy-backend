@@ -180,3 +180,28 @@
 16.5.2025, 17:03:30 - ERROR - Cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
 16.5.2025, 17:03:30 - ERROR - cannot load toys | MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
 20.5.2025, 2:24:33 - DEBUG - auth.service - signup with username: 23, fullname: 2323
+20.5.2025, 4:47:36 - ERROR - cannot save review | MongoServerError: Performing an update on the path '_id' would modify the immutable field '_id'
+20.5.2025, 4:47:35 - ERROR - cannot update toy undefined | MongoServerError: Performing an update on the path '_id' would modify the immutable field '_id'
+20.5.2025, 4:53:34 - ERROR - cannot remove review | ReferenceError: toyService is not defined
+21.5.2025, 2:51:46 - ERROR - cannot load reviews | MongoServerError: the match filter must be an expression in an object
+21.5.2025, 2:51:46 - ERROR - Cannot load reviews | MongoServerError: the match filter must be an expression in an object
+21.5.2025, 2:54:27 - ERROR - Cannot load reviews | MongoServerError: the match filter must be an expression in an object
+21.5.2025, 2:54:27 - ERROR - cannot load reviews | MongoServerError: the match filter must be an expression in an object
+21.5.2025, 2:54:47 - ERROR - cannot load reviews | MongoServerError: the match filter must be an expression in an object
+21.5.2025, 2:54:47 - ERROR - Cannot load reviews | MongoServerError: the match filter must be an expression in an object
+21.5.2025, 5:46:18 - ERROR - cannot load review | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:18 - ERROR - while finding review [object Object] | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:18 - ERROR - while finding review [object Object] | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:18 - ERROR - cannot load review | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:23 - ERROR - while finding review [object Object] | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:23 - ERROR - cannot load review | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:23 - ERROR - while finding review [object Object] | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:23 - ERROR - cannot load review | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:28 - ERROR - while finding review [object Object] | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:28 - ERROR - cannot load review | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:28 - ERROR - while finding review [object Object] | BSONError: hex string must be 24 characters
+21.5.2025, 5:46:28 - ERROR - cannot load review | BSONError: hex string must be 24 characters
+21.5.2025, 6:51:03 - ERROR - cannot save review | ReferenceError: txt is not defined
+21.5.2025, 6:53:37 - ERROR - cannot save review | ReferenceError: reviewToSave is not defined
+21.5.2025, 10:59:22 - DEBUG - auth.service - signup with username: 34343, fullname: 343434
+21.5.2025, 11:46:21 - ERROR - Invalid credentials | Error: Login failed

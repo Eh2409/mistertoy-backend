@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser'
 import { toyRoutes } from './api/toy/toy.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
+import { reviewRoutes } from './api/review/review.routes.js'
 import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -44,6 +45,7 @@ app.use('/**', setupAsyncLocalStorage)
 app.use('/api/toy', toyRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
+app.use('/api/review', reviewRoutes)
 
 
 app.get('/**', (req, res) => {
