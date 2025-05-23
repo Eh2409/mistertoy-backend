@@ -205,3 +205,32 @@
 21.5.2025, 6:53:37 - ERROR - cannot save review | ReferenceError: reviewToSave is not defined
 21.5.2025, 10:59:22 - DEBUG - auth.service - signup with username: 34343, fullname: 343434
 21.5.2025, 11:46:21 - ERROR - Invalid credentials | Error: Login failed
+22.5.2025, 5:19:42 - ERROR - cannot save review | TypeError: Cannot read properties of undefined (reading 'getTimestamp')
+22.5.2025, 5:19:42 - ERROR - cannot add review | TypeError: Cannot read properties of undefined (reading 'getTimestamp')
+22.5.2025, 5:22:10 - ERROR - cannot add review | TypeError: Cannot read properties of undefined (reading 'getTimestamp')
+22.5.2025, 5:22:10 - ERROR - cannot save review | TypeError: Cannot read properties of undefined (reading 'getTimestamp')
+22.5.2025, 8:59:23 - DEBUG - auth.service - signup with username: 234324, fullname: 234324
+22.5.2025, 9:00:51 - DEBUG - auth.service - signup with username: 222, fullname: 222
+22.5.2025, 9:10:20 - DEBUG - auth.service - signup with username: 333, fullname: 333
+22.5.2025, 9:10:20 - ERROR - Invalid credentials | Error: Username taken
+22.5.2025, 9:10:22 - DEBUG - auth.service - signup with username: 3333, fullname: 333
+22.5.2025, 9:36:01 - DEBUG - auth.service - signup with username: 33, fullname: 33
+22.5.2025, 9:38:13 - DEBUG - auth.service - signup with username: 234234, fullname: 32432424
+22.5.2025, 9:40:06 - DEBUG - auth.service - signup with username: 23423, fullname: 234324
+22.5.2025, 9:41:22 - DEBUG - auth.service - signup with username: 23423234, fullname: 4234234
+22.5.2025, 10:17:18 - DEBUG - auth.service - signup with username: 4545345, fullname: 34543345
+22.5.2025, 10:20:53 - DEBUG - auth.service - signup with username: 234324, fullname: 4324324
+22.5.2025, 10:20:53 - ERROR - Invalid credentials | Error: Username taken
+22.5.2025, 10:21:28 - DEBUG - auth.service - signup with username: 234324, fullname: 4324324
+22.5.2025, 10:21:28 - ERROR - Invalid credentials | Error: Username taken
+22.5.2025, 10:22:59 - DEBUG - auth.service - signup with username: 234, fullname: 4324
+22.5.2025, 10:24:07 - DEBUG - auth.service - signup with username: ER, fullname: REWR
+22.5.2025, 10:24:40 - DEBUG - auth.service - signup with username: SDFDSFDS, fullname: FSDSDF
+22.5.2025, 10:27:13 - DEBUG - auth.service - signup with username: 23432, fullname: 324324
+22.5.2025, 10:31:40 - DEBUG - auth.service - signup with username: qqq, fullname: qqq
+22.5.2025, 11:29:23 - ERROR - cannot save toy | ReferenceError: toyService is not defined
+22.5.2025, 11:29:37 - ERROR - cannot save toy | ReferenceError: toyService is not defined
+22.5.2025, 11:30:53 - ERROR - cannot save toy | TypeError: Cannot destructure property 'profileImg' of 'user' as it is undefined.
+23.5.2025, 3:08:41 - DEBUG - auth.service - signup with username: 234, fullname: 23423
+23.5.2025, 3:08:41 - ERROR - Invalid credentials | Error: Username taken
+23.5.2025, 3:08:44 - DEBUG - auth.service - signup with username: 23465546546, fullname: 23423

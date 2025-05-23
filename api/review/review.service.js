@@ -50,6 +50,7 @@ async function query(filterBy = {}) {
                     'byUser.fullname': true,
                     'aboutToy._id': true,
                     'aboutToy.name': true,
+                    'createdAt': { $toLong: { $toDate: '$_id' } }
                 }
             }
         ]).sort(sort).toArray()
@@ -94,9 +95,13 @@ async function add(review) {
         txt: review.txt
     }
 
+
     try {
         const collection = await dbService.getCollection('review')
         await collection.insertOne(reviewToSave)
+
+        reviewToSave.createdAt = reviewToSave._id.getTimestamp().getTime()
+  
         return reviewToSave
     } catch (err) {
         loggerService.error('cannot add review', err)

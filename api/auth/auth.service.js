@@ -28,7 +28,7 @@ async function login(username, password) {
     }
 }
 
-async function signup(username, password, fullname) {
+async function signup(username, password, fullname, profileImg) {
     const saltRounds = 10
 
     loggerService.debug(
@@ -37,7 +37,7 @@ async function signup(username, password, fullname) {
     if (!username || !password || !fullname) throw new Error('Missing details')
 
     const hash = await bcrypt.hash(password, saltRounds)
-    return userService.add({ username, password: hash, fullname })
+    return userService.add({ username, password: hash, fullname, profileImg })
 }
 
 function getLoginToken(user) {

@@ -7,7 +7,8 @@ export const userService = {
     getById,
     getByUsername,
     remove,
-    add
+    add,
+    update
 }
 
 
@@ -15,12 +16,13 @@ async function query() {
     try {
         const collection = await dbService.getCollection('user')
         const users = await collection.find({}).toArray()
-        const usersToReturn = users.map(user => {
+        const nonAdminUsers = users.filter(user => !user?.isAdmin);
+        const usersToReturn = nonAdminUsers.map(user => {
             return ({
                 _id: user._id,
                 username: user.username,
                 fullname: user.fullname,
-                isAdmin: user.isAdmin
+                profileImg: user.profileImg
             })
         })
         return usersToReturn
@@ -75,6 +77,7 @@ async function add(user) {
             password: user.password,
             fullname: user.fullname,
             isAdmin: false,
+            profileImg: user.profileImg
         }
 
         const collection = await dbService.getCollection('user')
@@ -83,6 +86,25 @@ async function add(user) {
 
     } catch (err) {
         console.error('Failed to add user', err)
+        throw err
+    }
+}
+
+
+async function update(user) {
+
+    const { profileImg } = user
+
+    const userToSave = {
+        profileImg
+    }
+
+    try {
+        const collection = await dbService.getCollection('user')
+        await collection.updateOne({ _id: ObjectId.createFromHexString(user._id) }, { $set: userToSave })
+        return user
+    } catch (err) {
+        loggerService.error(`cannot update user ${user._id}`, err)
         throw err
     }
 }

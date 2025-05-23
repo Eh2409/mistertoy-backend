@@ -4,7 +4,13 @@ import { toyService } from "../toy/toy.service.js"
 
 
 export async function getReviews(req, res) {
-    const filterBy = req.query
+    const { byUserId, aboutToyId } = req.query
+
+    const filterBy = {
+        byUserId: byUserId || '',
+        aboutToyId: aboutToyId || ''
+    }
+
     try {
         const data = await reviewService.query(filterBy)
         res.send(data)

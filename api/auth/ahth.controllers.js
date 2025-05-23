@@ -17,8 +17,8 @@ export async function login(req, res) {
 
 export async function signup(req, res) {
     try {
-        const { username, password, fullname } = req.body
-        const account = await authService.signup(username, password, fullname)
+        const { username, password, fullname, profileImg } = req.body
+        const account = await authService.signup(username, password, fullname, profileImg)
 
         if (account) {
             const user = await authService.login(username, password)
