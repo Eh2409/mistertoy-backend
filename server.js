@@ -11,8 +11,7 @@ import { authRoutes } from './api/auth/auth.routes.js'
 import { reviewRoutes } from './api/review/review.routes.js'
 import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 
